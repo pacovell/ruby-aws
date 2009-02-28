@@ -1,16 +1,20 @@
-# $Id: tc_aws.rb,v 1.11 2008/10/02 21:33:58 ianmacd Exp $
-#
-
-require 'test/unit'
-require './setup'
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 require 'fileutils'
 require 'tmpdir'
 require 'amazon/locale'
 
-class TestAWSBasics < AWSTest
+class TestAWSBasics < Test::Unit::TestCase
 
   CACHE_DIR = Amazon::AWS::Cache::DEFAULT_CACHE_DIR
   CACHE_PATH = File.join( Dir.tmpdir, 'aws_cache' )
+
+  def setup
+    @rg = ResponseGroup.new( :Small )
+    @req = Request.new(@@key_id, @@associates_id)
+    @req.locale = 'uk'
+    @req.cache = false
+  end
 
   def test_version
     v = '1.8.6'
@@ -127,25 +131,6 @@ class TestAWSBasics < AWSTest
 
   def test_exceptions
     assert_raise( Amazon::AWS::HTTPError ) { raise Amazon::AWS::HTTPError }
-  end
-
-  include Amazon
-
-  def test_geo
-
-    require 'net/geoip'
-
-    assert_equal( 'de', Locale.get_locale_by_name( 'www.marxer.org' ) )
-    assert_equal( 'jp', Locale.get_locale_by_name( 'ruby-lang.org' ) )
-    assert_equal( 'uk', Locale.get_locale_by_name( 'xs1.xs4all.nl' ) )
-    assert_equal( 'uk', Locale.get_locale_by_name( 'caliban.org' ) )
-    assert_equal( 'us', Locale.get_locale_by_name( 'google.com' ) )
-
-    # Ensure non-existent hostname causes an Amazon::Locale::GeoError.
-    #
-    assert_raise( Amazon::Locale::GeoError ) do
-      Locale.get_locale_by_name( 'marxer.org' )
-    end
   end
 
 end

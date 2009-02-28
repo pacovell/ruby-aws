@@ -1,10 +1,14 @@
-# $Id: tc_multiple_operation.rb,v 1.2 2009/02/19 16:50:00 ianmacd Exp $
-#
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 
-require 'test/unit'
-require './setup'
+class TestMultipleOperation < Test::Unit::TestCase
 
-class TestMultipleOperation < AWSTest
+  def setup
+    @rg = ResponseGroup.new( :Small )
+    @req = Request.new(@@key_id, @@associates_id)
+    @req.locale = 'uk'
+    @req.cache = false
+  end
 
   def test_item_search
     il = ItemLookup.new( 'ASIN', { 'ItemId' => 'B000AE4QEC',

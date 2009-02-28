@@ -1,10 +1,7 @@
-# $Id: tc_amazon.rb,v 1.1 2008/05/19 10:17:26 ianmacd Exp $
-#
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 
-require 'test/unit'
-require './setup'
-
-class TestAmazonBasics < AWSTest
+class TestAmazonBasics < Test::Unit::TestCase
 
   def test_uncamelise
     str = 'ALongStringWithACRONYM'

@@ -1,10 +1,14 @@
-# $Id: tc_operation_request.rb,v 1.1 2008/05/19 10:17:26 ianmacd Exp $
-#
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 
-require 'test/unit'
-require './setup'
+class TestOperationRequest < Test::Unit::TestCase
 
-class TestOperationRequest < AWSTest
+  def setup
+    @rg = ResponseGroup.new( :Small )
+    @req = Request.new(@@key_id, @@associates_id)
+    @req.locale = 'uk'
+    @req.cache = false
+  end
 
   def test_operation_request
     is = ItemSearch.new( 'Books', { 'Title' => 'Ruby' } )

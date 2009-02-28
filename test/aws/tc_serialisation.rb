@@ -1,13 +1,17 @@
-# $Id: tc_serialisation.rb,v 1.2 2008/06/22 21:18:50 ianmacd Exp $
-#
-
-require 'test/unit'
-require './setup'
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 require 'yaml'
 require 'tempfile'
 
-class AWSSerialisationTest < AWSTest
+class AWSSerialisationTest < Test::Unit::TestCase
 
+  def setup
+    @rg = ResponseGroup.new( :Small )
+    @req = Request.new(@@key_id, @@associates_id)
+    @req.locale = 'uk'
+    @req.cache = false
+  end
+  
   def test_yaml_load
 
     results_file = Tempfile.new( 'ruby_aws' )

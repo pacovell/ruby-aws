@@ -1,11 +1,14 @@
-#!/usr/bin/ruby -w
-#
-# $Id: tc_vehicle_operations.rb,v 1.1 2009/02/19 15:50:03 ianmacd Exp $
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../test_helper'
 
-require 'test/unit'
-require './setup'
+class TestVehicles < Test::Unit::TestCase
 
-class TestVehicles < AWSTest
+  def setup
+    @rg = ResponseGroup.new( :Small )
+    @req = Request.new(@@key_id, @@associates_id)
+    @req.locale = 'uk'
+    @req.cache = false
+  end
 
   def test_vehicle_search
     @req.locale = 'us'
