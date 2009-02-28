@@ -1,0 +1,1056 @@
+<?xml version="1.0"?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2009-01-06">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Ruby/Amazon/AWS 0.4.4"/>
+    </HTTPHeaders>
+    <RequestId>cb33ba4d-c952-4543-b7df-7ac54f49e4e6</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemSearch"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="AWSAccessKeyId" Value="15QN36861J5Q5KH0KZR2"/>
+      <Argument Name="ResponseGroup" Value="Small,ItemAttributes"/>
+      <Argument Name="ItemPage" Value="3"/>
+      <Argument Name="AssociateTag" Value="reagif-20"/>
+      <Argument Name="SearchIndex" Value="DVD"/>
+      <Argument Name="Version" Value="2009-01-06"/>
+      <Argument Name="Keywords" Value="pink"/>
+    </Arguments>
+    <RequestProcessingTime>0.1234320000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemSearchRequest>
+        <Condition>New</Condition>
+        <DeliveryMethod>Ship</DeliveryMethod>
+        <ItemPage>3</ItemPage>
+        <Keywords>pink</Keywords>
+        <MerchantId>Amazon</MerchantId>
+        <ResponseGroup>Small</ResponseGroup>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ReviewSort>-SubmissionDate</ReviewSort>
+        <SearchIndex>DVD</SearchIndex>
+      </ItemSearchRequest>
+    </Request>
+    <TotalResults>465</TotalResults>
+    <TotalPages>47</TotalPages>
+    <Item>
+      <ASIN>B0009S4J2S</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/B0009S4J2S%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009S4J2S</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/tech-data/B0009S4J2S%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0009S4J2S%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0009S4J2S%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0009S4J2S%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0009S4J2S%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0009S4J2S%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0009S4J2S%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J2S</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>Mel Blanc</Actor>
+        <Actor>Paul Frees</Actor>
+        <Actor>Rich Little</Actor>
+        <Actor>Laura Olsher</Actor>
+        <Actor>Larry Storch</Actor>
+        <AspectRatio>1.33:1</AspectRatio>
+        <AudienceRating>NR (Not Rated)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Brand>TWENTIETH CENTURY FOX HOME ENT</Brand>
+        <Creator Role="Producer">Friz Freleng</Creator>
+        <Creator Role="Editor">Al Wahrman</Creator>
+        <Creator Role="Editor">Chuck McCann</Creator>
+        <Creator Role="Editor">Eugene Marks</Creator>
+        <Creator Role="Producer">David H. DePatie</Creator>
+        <Creator Role="Producer">Walter Mirisch</Creator>
+        <Creator Role="Writer">Bob Kurtz</Creator>
+        <Creator Role="Writer">Jim Ryan</Creator>
+        <Creator Role="Writer">John W. Dunn</Creator>
+        <Creator Role="Writer">Michael O'Connor</Creator>
+        <Director>Friz Freleng</Director>
+        <Director>Hawley Pratt</Director>
+        <EAN>0027616926357</EAN>
+        <Format>Animated</Format>
+        <Format>Closed-captioned</Format>
+        <Format>Color</Format>
+        <Format>DVD-Video</Format>
+        <Format>Full Screen</Format>
+        <Format>Subtitled</Format>
+        <Format>NTSC</Format>
+        <ItemDimensions>
+          <Weight Units="hundredths-pounds">100</Weight>
+        </ItemDimensions>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Portuguese</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>MGMDM113403D</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1964-12-18</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2006-01-31</ReleaseDate>
+        <RunningTime Units="minutes">170</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1964-12-18</TheatricalReleaseDate>
+        <Title>The Pink Panther Classic Cartoon Collection, Vol. 1: Pranks in the Pink</Title>
+        <UPC>027616926357</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001HUWQFE</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-Capucine/dp/B001HUWQFE%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001HUWQFE</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-Capucine/dp/tech-data/B001HUWQFE%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001HUWQFE%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001HUWQFE%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001HUWQFE%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001HUWQFE%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001HUWQFE%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001HUWQFE%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001HUWQFE</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>Capucine</Actor>
+        <Actor>Claudia Cardinale</Actor>
+        <Actor>Brenda de Banzie</Actor>
+        <Actor>Colin Gordon</Actor>
+        <Actor>Fran Jeffries</Actor>
+        <AspectRatio>2.35:1</AspectRatio>
+        <AudienceRating>PG (Parental Guidance Suggested)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Creator Role="Cinematographer">Philip H. Lathrop</Creator>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <EAN>0883904132332</EAN>
+        <Format>AC-3</Format>
+        <Format>Collector's Edition</Format>
+        <Format>Color</Format>
+        <Format>Dolby</Format>
+        <Format>Dubbed</Format>
+        <Format>DVD-Video</Format>
+        <Format>Subtitled</Format>
+        <Format>Widescreen</Format>
+        <Format>NTSC</Format>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Dubbed</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Dubbed</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>113233</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1963-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">60</Height>
+          <Length Units="hundredths-inches">740</Length>
+          <Weight Units="hundredths-pounds">15</Weight>
+          <Width Units="hundredths-inches">530</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2009-01-27</ReleaseDate>
+        <RunningTime Units="minutes">115</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1963</TheatricalReleaseDate>
+        <Title>The Pink Panther</Title>
+        <UPC>883904132332</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0009S4J50</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/B0009S4J50%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009S4J50</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/tech-data/B0009S4J50%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0009S4J50%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0009S4J50%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0009S4J50%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0009S4J50%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0009S4J50%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0009S4J50%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J50</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>Bob Holt</Actor>
+        <Actor>Art Leonardi</Actor>
+        <Actor>Nora Armani</Actor>
+        <Actor>Kevork Noubarian</Actor>
+        <Actor>Gerald Papasyan</Actor>
+        <AspectRatio>1.33:1</AspectRatio>
+        <AudienceRating>G (General Audience)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Brand>TWENTIETH CENTURY FOX HOME ENT</Brand>
+        <Creator Role="Writer">Art Leonardi</Creator>
+        <Creator Role="Writer">Dale Hale</Creator>
+        <Creator Role="Writer">David Detiege</Creator>
+        <Creator Role="Writer">Irv Spector</Creator>
+        <Creator Role="Writer">Jack Miller</Creator>
+        <Creator Role="Writer">John W. Dunn</Creator>
+        <Creator Role="Writer">Larz Bourne</Creator>
+        <Creator Role="Writer">Lee Mishkin</Creator>
+        <Director>Art Leonardi</Director>
+        <Director>Ara Madzounian</Director>
+        <Director>Arthur Davis</Director>
+        <Director>Friz Freleng</Director>
+        <Director>Gerry Chiniquy</Director>
+        <EAN>0027616926371</EAN>
+        <Format>Animated</Format>
+        <Format>Closed-captioned</Format>
+        <Format>Color</Format>
+        <Format>DVD-Video</Format>
+        <Format>Full Screen</Format>
+        <Format>Subtitled</Format>
+        <Format>NTSC</Format>
+        <ItemDimensions>
+          <Weight Units="hundredths-pounds">100</Weight>
+        </ItemDimensions>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Portuguese</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>MGMDM113407D</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1971-08-04</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2006-01-31</ReleaseDate>
+        <RunningTime Units="minutes">171</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1971-08-04</TheatricalReleaseDate>
+        <Title>The Pink Panther Classic Cartoon Collection, Vol. 3: Frolics in the Pink</Title>
+        <UPC>027616926371</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000CEXFC4</ASIN>
+      <DetailPageURL>http://www.amazon.com/Revenge-Pink-Panther-Paul-Antrim/dp/B000CEXFC4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000CEXFC4</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Revenge-Pink-Panther-Paul-Antrim/dp/tech-data/B000CEXFC4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000CEXFC4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000CEXFC4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000CEXFC4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000CEXFC4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000CEXFC4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000CEXFC4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000CEXFC4</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>Paul Antrim</Actor>
+        <Actor>Alfie Bass</Actor>
+        <Actor>Tony Beckley</Actor>
+        <Actor>John Bluthal</Actor>
+        <Actor>Alec Bregonzi</Actor>
+        <AspectRatio>1.33:1</AspectRatio>
+        <AudienceRating>PG (Parental Guidance Suggested)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Creator Role="Cinematographer">Ernest Day</Creator>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <EAN>0027616905956</EAN>
+        <Format>Closed-captioned</Format>
+        <Format>Color</Format>
+        <Format>Dolby</Format>
+        <Format>Dubbed</Format>
+        <Format>DVD-Video</Format>
+        <Format>Original recording remastered</Format>
+        <Format>Subtitled</Format>
+        <Format>Widescreen</Format>
+        <Format>NTSC</Format>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Dubbed</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Dubbed</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1978-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <ReleaseDate>2009-01-27</ReleaseDate>
+        <RunningTime Units="minutes">99</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1978</TheatricalReleaseDate>
+        <Title>Revenge of the Pink Panther</Title>
+        <UPC>027616905956</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000F8O2NS</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/B000F8O2NS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000F8O2NS</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-Classic-Cartoon-Collection/dp/tech-data/B000F8O2NS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000F8O2NS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000F8O2NS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000F8O2NS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000F8O2NS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000F8O2NS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000F8O2NS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000F8O2NS</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <AspectRatio>1.33:1</AspectRatio>
+        <AudienceRating>G (General Audience)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Brand>TWENTIETH CENTURY FOX HOME ENT</Brand>
+        <Creator Role="Editor">Robert T. Gillis</Creator>
+        <Creator Role="Producer">David H. DePatie</Creator>
+        <Creator Role="Producer">Friz Freleng</Creator>
+        <Creator Role="Writer">John W. Dunn</Creator>
+        <Director>Sid Marcus</Director>
+        <EAN>0027616121172</EAN>
+        <Format>Animated</Format>
+        <Format>Closed-captioned</Format>
+        <Format>Color</Format>
+        <Format>DVD-Video</Format>
+        <Format>Full Screen</Format>
+        <Format>Subtitled</Format>
+        <Format>NTSC</Format>
+        <ItemDimensions>
+          <Weight Units="hundredths-pounds">20</Weight>
+        </ItemDimensions>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Portuguese</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>12117</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1976-05-28</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2006-06-13</ReleaseDate>
+        <RunningTime Units="minutes">171</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1976-05-28</TheatricalReleaseDate>
+        <Title>The Pink Panther Classic Cartoon Collection, Vol. 4: Swingin Pink</Title>
+        <UPC>027616121172</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000V3JGJ2</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-Christmas/dp/B000V3JGJ2%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000V3JGJ2</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-Christmas/dp/tech-data/B000V3JGJ2%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000V3JGJ2%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000V3JGJ2%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000V3JGJ2%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000V3JGJ2%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000V3JGJ2%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000V3JGJ2%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V3JGJ2</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <AspectRatio>1.33:1</AspectRatio>
+        <AudienceRating>NR (Not Rated)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Director>Bill Perez</Director>
+        <EAN>0027616094179</EAN>
+        <Format>Animated</Format>
+        <Format>Color</Format>
+        <Format>Dubbed</Format>
+        <Format>DVD-Video</Format>
+        <Format>Full Screen</Format>
+        <Format>Subtitled</Format>
+        <Format>NTSC</Format>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Dubbed</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>MGMDM109417D</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1978-12-07</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">60</Height>
+          <Length Units="hundredths-inches">750</Length>
+          <Weight Units="hundredths-pounds">20</Weight>
+          <Width Units="hundredths-inches">530</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2007-11-06</ReleaseDate>
+        <RunningTime Units="minutes">81</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1978-12-07</TheatricalReleaseDate>
+        <Title>The Pink Panther - A Pink Christmas</Title>
+        <UPC>027616094179</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0000DBJDM</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Floyd-Live-Pompeii-Directors/dp/B0000DBJDM%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0000DBJDM</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Floyd-Live-Pompeii-Directors/dp/tech-data/B0000DBJDM%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0000DBJDM%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0000DBJDM%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0000DBJDM%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0000DBJDM%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0000DBJDM%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0000DBJDM%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000DBJDM</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>David Gilmour</Actor>
+        <Actor>Roger Waters</Actor>
+        <Actor>Richard Wright</Actor>
+        <Actor>Nick Mason</Actor>
+        <AudienceRating>G (General Audience)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Brand>PINK FLOYD</Brand>
+        <Creator Role="Cinematographer">G&#xE1;bor Pog&#xE1;ny</Creator>
+        <Creator Role="Cinematographer">Willy Kurant</Creator>
+        <Creator Role="Editor">Jos&#xE9; Pinheiro</Creator>
+        <Creator Role="Editor">Nino DiFonzo</Creator>
+        <Creator Role="Producer">Alex Darbyshire</Creator>
+        <Creator Role="Producer">Mark Fenwick</Creator>
+        <Creator Role="Producer">Mich&#xE8;le Arnaud</Creator>
+        <Creator Role="Producer">Nick Ryle</Creator>
+        <Creator Role="Producer">Reiner Moritz</Creator>
+        <Creator Role="Producer">Stephen O'Rourke</Creator>
+        <Director>Adrian Maben</Director>
+        <EAN>0602498609460</EAN>
+        <Format>Anamorphic</Format>
+        <Format>Color</Format>
+        <Format>Director's Cut</Format>
+        <Format>DVD-Video</Format>
+        <Format>Full Screen</Format>
+        <Format>Live</Format>
+        <Format>NTSC</Format>
+        <Label>Hip-O Records</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+            <AudioFormat>Dolby Digital 2.0 Stereo</AudioFormat>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Japanese</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Georgian</Name>
+            <Type>Subtitled</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1998</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$19.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Hip-O Records</Manufacturer>
+        <MPN>MCMDB131509D</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>2003-10-21</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">50</Height>
+          <Length Units="hundredths-inches">750</Length>
+          <Weight Units="hundredths-pounds">25</Weight>
+          <Width Units="hundredths-inches">540</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>Hip-O Records</Publisher>
+        <RegionCode>0</RegionCode>
+        <ReleaseDate>2003-10-21</ReleaseDate>
+        <RunningTime Units="minutes">91</RunningTime>
+        <Studio>Hip-O Records</Studio>
+        <TheatricalReleaseDate>2003-10-21</TheatricalReleaseDate>
+        <Title>Pink Floyd - Live at Pompeii (Director's Cut)</Title>
+        <UPC>602498609460</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>6305603847</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Floyd-Wall-Bob-Geldof/dp/6305603847%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D6305603847</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Floyd-Wall-Bob-Geldof/dp/tech-data/6305603847%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D6305603847%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D6305603847%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D6305603847%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/6305603847%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/6305603847%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/6305603847%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D6305603847</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>Bob Geldof</Actor>
+        <Actor>Christine Hargreaves</Actor>
+        <Actor>James Laurenson</Actor>
+        <Actor>Eleanor David</Actor>
+        <Actor>Kevin McKeon</Actor>
+        <AspectRatio>2.35:1</AspectRatio>
+        <AudienceRating>R (Restricted)</AudienceRating>
+        <Binding>DVD</Binding>
+        <Creator Role="Cinematographer">Peter Biziou</Creator>
+        <Creator Role="Editor">Gerry Hambling</Creator>
+        <Creator Role="Producer">Alan Marshall</Creator>
+        <Creator Role="Producer">Garth Thomas</Creator>
+        <Creator Role="Producer">Stephen O'Rourke</Creator>
+        <Creator Role="Writer">Roger Waters</Creator>
+        <Director>Alan Parker</Director>
+        <DVDLayers>2</DVDLayers>
+        <DVDSides>1</DVDSides>
+        <EAN>9786305603849</EAN>
+        <Format>AC-3</Format>
+        <Format>Anamorphic</Format>
+        <Format>Animated</Format>
+        <Format>Color</Format>
+        <Format>Dolby</Format>
+        <Format>DVD-Video</Format>
+        <Format>Live</Format>
+        <Format>Special Edition</Format>
+        <Format>Widescreen</Format>
+        <Format>NTSC</Format>
+        <ISBN>6305603847</ISBN>
+        <Label>Sony</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+            <AudioFormat>Dolby Digital 5.1</AudioFormat>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>3198</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$31.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Sony</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">60</Height>
+          <Length Units="hundredths-inches">750</Length>
+          <Weight Units="hundredths-pounds">25</Weight>
+          <Width Units="hundredths-inches">510</Width>
+        </PackageDimensions>
+        <PictureFormat>Anamorphic Widescreen</PictureFormat>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>Sony</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>1999-12-02</ReleaseDate>
+        <RunningTime Units="minutes">95</RunningTime>
+        <Studio>Sony</Studio>
+        <TheatricalReleaseDate>1982</TheatricalReleaseDate>
+        <Title>Pink Floyd - The Wall</Title>
+        <UPC>074645019895</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0009S4J3C</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Panther-David-Niven/dp/B0009S4J3C%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009S4J3C</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Panther-David-Niven/dp/tech-data/B0009S4J3C%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0009S4J3C%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0009S4J3C%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0009S4J3C%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0009S4J3C%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0009S4J3C%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0009S4J3C%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J3C</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Actor>David Niven</Actor>
+        <Actor>Peter Sellers</Actor>
+        <Actor>Robert Wagner</Actor>
+        <Actor>Capucine</Actor>
+        <Actor>Brenda De Banzie</Actor>
+        <AspectRatio>2.35:1</AspectRatio>
+        <AudienceRating>Unrated</AudienceRating>
+        <Binding>DVD</Binding>
+        <Brand>SELLERS,PETER</Brand>
+        <Creator Role="Cinematographer">Philip H. Lathrop</Creator>
+        <Creator Role="Writer">Blake Edwards</Creator>
+        <Creator Role="Editor">Ralph E. Winters</Creator>
+        <Creator Role="Producer">Dick Crockett</Creator>
+        <Creator Role="Producer">Martin Jurow</Creator>
+        <Creator Role="Writer">Maurice Richlin</Creator>
+        <Director>Blake Edwards</Director>
+        <EAN>0027616905949</EAN>
+        <Format>Closed-captioned</Format>
+        <Format>Color</Format>
+        <Format>Dolby</Format>
+        <Format>Dubbed</Format>
+        <Format>DVD-Video</Format>
+        <Format>Original recording remastered</Format>
+        <Format>Subtitled</Format>
+        <Format>Widescreen</Format>
+        <Format>NTSC</Format>
+        <Label>MGM (Video &amp; DVD)</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>Italian</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Subtitled</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Dubbed</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Dubbed</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1498</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>MGM (Video &amp; DVD)</Manufacturer>
+        <MPN>027616905949</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OriginalReleaseDate>1964-03-20</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>MGM (Video &amp; DVD)</Publisher>
+        <RegionCode>1</RegionCode>
+        <ReleaseDate>2006-01-31</ReleaseDate>
+        <RunningTime Units="minutes">115</RunningTime>
+        <Studio>MGM (Video &amp; DVD)</Studio>
+        <TheatricalReleaseDate>1964-03-20</TheatricalReleaseDate>
+        <Title>The Pink Panther</Title>
+        <UPC>027616905949</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0009S4J46</ASIN>
+      <DetailPageURL>http://www.amazon.com/REVENGE-OF-THE-PINK-PANTHER/dp/B0009S4J46%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009S4J46</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/REVENGE-OF-THE-PINK-PANTHER/dp/tech-data/B0009S4J46%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0009S4J46%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0009S4J46%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0009S4J46%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0009S4J46%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0009S4J46%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0009S4J46%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0009S4J46</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>DVD</Binding>
+        <Brand>SELLERS,PETER</Brand>
+        <ItemDimensions>
+          <Weight Units="hundredths-pounds">100</Weight>
+        </ItemDimensions>
+        <Label>SELLERS,PETER</Label>
+        <ListPrice>
+          <Amount>1494</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$14.94</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>SELLERS,PETER</Manufacturer>
+        <MPN>027616905956</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">58</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">542</Width>
+        </PackageDimensions>
+        <ProductGroup>DVD</ProductGroup>
+        <ProductTypeName>ABIS_DVD</ProductTypeName>
+        <Publisher>SELLERS,PETER</Publisher>
+        <Studio>SELLERS,PETER</Studio>
+        <Title>REVENGE OF THE PINK PANTHER</Title>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</ItemSearchResponse>

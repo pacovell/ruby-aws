@@ -1,0 +1,802 @@
+<?xml version="1.0"?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2009-01-06">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Ruby/Amazon/AWS 0.4.4"/>
+    </HTTPHeaders>
+    <RequestId>cc21f412-eb41-4464-808a-c24774fd29ba</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemSearch"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="AWSAccessKeyId" Value="15QN36861J5Q5KH0KZR2"/>
+      <Argument Name="ResponseGroup" Value="Small,ItemAttributes"/>
+      <Argument Name="ItemPage" Value="4"/>
+      <Argument Name="AssociateTag" Value="reagif-20"/>
+      <Argument Name="SearchIndex" Value="Books"/>
+      <Argument Name="Version" Value="2009-01-06"/>
+      <Argument Name="Keywords" Value="pink"/>
+    </Arguments>
+    <RequestProcessingTime>0.4310750000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemSearchRequest>
+        <Condition>New</Condition>
+        <DeliveryMethod>Ship</DeliveryMethod>
+        <ItemPage>4</ItemPage>
+        <Keywords>pink</Keywords>
+        <MerchantId>Amazon</MerchantId>
+        <ResponseGroup>Small</ResponseGroup>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ReviewSort>-SubmissionDate</ReviewSort>
+        <SearchIndex>Books</SearchIndex>
+      </ItemSearchRequest>
+    </Request>
+    <TotalResults>6441</TotalResults>
+    <TotalPages>645</TotalPages>
+    <Item>
+      <ASIN>0689875886</ASIN>
+      <DetailPageURL>http://www.amazon.com/Hinky-Pink-Old-Tale-Megan-McDonald/dp/0689875886%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0689875886</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Hinky-Pink-Old-Tale-Megan-McDonald/dp/tech-data/0689875886%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0689875886%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0689875886%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0689875886%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/0689875886%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/0689875886%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/0689875886%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0689875886</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Hardcover</Binding>
+        <Creator Role="Adapter">Megan McDonald</Creator>
+        <Creator Role="Illustrator">Brian Floca</Creator>
+        <EAN>9780689875885</EAN>
+        <ISBN>0689875886</ISBN>
+        <Label>Atheneum/Richard Jackson Books</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1699</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$16.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Atheneum/Richard Jackson Books</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>48</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">50</Height>
+          <Length Units="hundredths-inches">860</Length>
+          <Weight Units="hundredths-pounds">35</Weight>
+          <Width Units="hundredths-inches">720</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2008-09-09</PublicationDate>
+        <Publisher>Atheneum/Richard Jackson Books</Publisher>
+        <ReadingLevel>Ages 4-8</ReadingLevel>
+        <Studio>Atheneum/Richard Jackson Books</Studio>
+        <Title>The Hinky-Pink: An Old Tale</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>8850700148</ASIN>
+      <DetailPageURL>http://www.amazon.com/Wall-Guitar-Tab-Pink-Floyd/dp/8850700148%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D8850700148</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Wall-Guitar-Tab-Pink-Floyd/dp/tech-data/8850700148%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D8850700148%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D8850700148%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D8850700148%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/8850700148%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/8850700148%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/8850700148%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D8850700148</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Paperback</Binding>
+        <Creator Role="Recorder">Pink Floyd</Creator>
+        <EAN>9788850700141</EAN>
+        <ISBN>8850700148</ISBN>
+        <Label>Alfred Publishing Company</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>2195</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$21.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Alfred Publishing Company</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">39</Height>
+          <Length Units="hundredths-inches">1189</Length>
+          <Weight Units="hundredths-pounds">115</Weight>
+          <Width Units="hundredths-inches">882</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2004-05</PublicationDate>
+        <Publisher>Alfred Publishing Company</Publisher>
+        <Studio>Alfred Publishing Company</Studio>
+        <Title>The Wall (Guitar Tab)</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>0816648999</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Ribbons-Inc-Politics-Philanthropy/dp/0816648999%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0816648999</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Ribbons-Inc-Politics-Philanthropy/dp/tech-data/0816648999%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0816648999%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0816648999%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0816648999%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/0816648999%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/0816648999%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/0816648999%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0816648999</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Samantha King</Author>
+        <Binding>Paperback</Binding>
+        <DeweyDecimalNumber>361</DeweyDecimalNumber>
+        <EAN>9780816648993</EAN>
+        <ISBN>0816648999</ISBN>
+        <Label>Univ Of Minnesota Press</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1895</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$18.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Univ Of Minnesota Press</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>208</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">55</Height>
+          <Length Units="hundredths-inches">882</Length>
+          <Weight Units="hundredths-pounds">53</Weight>
+          <Width Units="hundredths-inches">543</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2008-05-19</PublicationDate>
+        <Publisher>Univ Of Minnesota Press</Publisher>
+        <Studio>Univ Of Minnesota Press</Studio>
+        <Title>Pink Ribbons, Inc.: Breast Cancer and the Politics of Philanthropy</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>1604596813</ASIN>
+      <DetailPageURL>http://www.amazon.com/Exposition-Hebrews-Arthur-W-Pink/dp/1604596813%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1604596813</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Exposition-Hebrews-Arthur-W-Pink/dp/tech-data/1604596813%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1604596813%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1604596813%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1604596813%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/1604596813%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/1604596813%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/1604596813%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1604596813</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Arthur W. Pink</Author>
+        <Binding>Paperback</Binding>
+        <DeweyDecimalNumber>248</DeweyDecimalNumber>
+        <EAN>9781604596816</EAN>
+        <ISBN>1604596813</ISBN>
+        <Label>Wilder Publications</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>2599</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$25.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Wilder Publications</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>788</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">190</Height>
+          <Length Units="hundredths-inches">970</Length>
+          <Weight Units="hundredths-pounds">315</Weight>
+          <Width Units="hundredths-inches">750</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2009-01-20</PublicationDate>
+        <Publisher>Wilder Publications</Publisher>
+        <Studio>Wilder Publications</Studio>
+        <Title>An Exposition of Hebrews</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>0785822577</ASIN>
+      <DetailPageURL>http://www.amazon.com/What-Makes-Flamingos-Pink-Unquenchably/dp/0785822577%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0785822577</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/What-Makes-Flamingos-Pink-Unquenchably/dp/tech-data/0785822577%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0785822577%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0785822577%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0785822577%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/0785822577%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/0785822577%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/0785822577%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0785822577</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Bill McLain</Author>
+        <Binding>Hardcover</Binding>
+        <DeweyDecimalNumber>031.02</DeweyDecimalNumber>
+        <EAN>9780785822578</EAN>
+        <ISBN>0785822577</ISBN>
+        <Label>Castle Books</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$9.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Castle Books</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>318</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">130</Height>
+          <Length Units="hundredths-inches">920</Length>
+          <Weight Units="hundredths-pounds">145</Weight>
+          <Width Units="hundredths-inches">600</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2007-02-28</PublicationDate>
+        <Publisher>Castle Books</Publisher>
+        <Studio>Castle Books</Studio>
+        <Title>What Makes Flamingos Pink?: A Colorful Collection of Q &amp; A's for the Unquenchably Curious</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>044023865X</ASIN>
+      <DetailPageURL>http://www.amazon.com/Kathleens-Story-Angels-Lurlene-Mcdaniel/dp/044023865X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D044023865X</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Kathleens-Story-Angels-Lurlene-Mcdaniel/dp/tech-data/044023865X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D044023865X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D044023865X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D044023865X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/044023865X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/044023865X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/044023865X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D044023865X</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Lurlene Mcdaniel</Author>
+        <Binding>Mass Market Paperback</Binding>
+        <EAN>9780440238652</EAN>
+        <ISBN>044023865X</ISBN>
+        <Label>Laurel-Leaf Books</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>699</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$6.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Laurel-Leaf Books</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>256</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">80</Height>
+          <Length Units="hundredths-inches">670</Length>
+          <Weight Units="hundredths-pounds">25</Weight>
+          <Width Units="hundredths-inches">420</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2006-07-11</PublicationDate>
+        <Publisher>Laurel-Leaf Books</Publisher>
+        <ReadingLevel>Young Adult</ReadingLevel>
+        <ReleaseDate>2006-07-11</ReleaseDate>
+        <Studio>Laurel-Leaf Books</Studio>
+        <Title>Kathleen's Story (Angels in Pink)</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>0385306849</ASIN>
+      <DetailPageURL>http://www.amazon.com/Saucerful-Secrets-Pink-Floyd-Odyssey/dp/0385306849%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0385306849</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Saucerful-Secrets-Pink-Floyd-Odyssey/dp/tech-data/0385306849%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0385306849%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0385306849%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0385306849%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/0385306849%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/0385306849%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/0385306849%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0385306849</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Nicholas Schaffner</Author>
+        <Binding>Paperback</Binding>
+        <DeweyDecimalNumber>782.42166092</DeweyDecimalNumber>
+        <EAN>9780385306843</EAN>
+        <ISBN>0385306849</ISBN>
+        <Label>Delta</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1000</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$10.00</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Delta</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>348</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">120</Height>
+          <Length Units="hundredths-inches">950</Length>
+          <Weight Units="hundredths-pounds">120</Weight>
+          <Width Units="hundredths-inches">640</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>1992-06-01</PublicationDate>
+        <Publisher>Delta</Publisher>
+        <ReleaseDate>1992-06-01</ReleaseDate>
+        <Studio>Delta</Studio>
+        <Title>Saucerful of Secrets: The Pink Floyd Odyssey</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>0805006001</ASIN>
+      <DetailPageURL>http://www.amazon.com/Pink-Triangle-Nazi-Against-Homosexuals/dp/0805006001%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0805006001</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pink-Triangle-Nazi-Against-Homosexuals/dp/tech-data/0805006001%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D0805006001%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D0805006001%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D0805006001%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/0805006001%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/0805006001%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/0805006001%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D0805006001</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Richard Plant</Author>
+        <Binding>Paperback</Binding>
+        <DeweyDecimalNumber>306.76620943</DeweyDecimalNumber>
+        <EAN>9780805006001</EAN>
+        <IsAdultProduct>0</IsAdultProduct>
+        <ISBN>0805006001</ISBN>
+        <Label>Holt Paperbacks</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>1600</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$16.00</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Holt Paperbacks</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>272</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">70</Height>
+          <Length Units="hundredths-inches">800</Length>
+          <Weight Units="hundredths-pounds">50</Weight>
+          <Width Units="hundredths-inches">550</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>1988-02-15</PublicationDate>
+        <Publisher>Holt Paperbacks</Publisher>
+        <Studio>Holt Paperbacks</Studio>
+        <Title>The Pink Triangle: The Nazi War Against Homosexuals</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>1599867419</ASIN>
+      <DetailPageURL>http://www.amazon.com/Gleanings-Genesis-Arthur-W-Pink/dp/1599867419%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1599867419</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Gleanings-Genesis-Arthur-W-Pink/dp/tech-data/1599867419%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D1599867419%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D1599867419%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D1599867419%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/1599867419%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/1599867419%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/1599867419%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D1599867419</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Arthur, W Pink</Author>
+        <Binding>Hardcover</Binding>
+        <EAN>9781599867410</EAN>
+        <ISBN>1599867419</ISBN>
+        <Label>Filiquarian Publishing, LLC.</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>2999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$29.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Filiquarian Publishing, LLC.</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>552</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">160</Height>
+          <Length Units="hundredths-inches">900</Length>
+          <Weight Units="hundredths-pounds">205</Weight>
+          <Width Units="hundredths-inches">620</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2007-09-08</PublicationDate>
+        <Publisher>Filiquarian Publishing, LLC.</Publisher>
+        <Studio>Filiquarian Publishing, LLC.</Studio>
+        <Title>Gleanings in Genesis</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>081440815X</ASIN>
+      <DetailPageURL>http://www.amazon.com/Dont-Think-Pink-Increase-Crucial/dp/081440815X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D081440815X</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Dont-Think-Pink-Increase-Crucial/dp/tech-data/081440815X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3D081440815X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3D081440815X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3D081440815X%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/081440815X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/081440815X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/081440815X%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3D081440815X</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Author>Lisa Johnson</Author>
+        <Author>Andrea Learned</Author>
+        <Binding>Hardcover</Binding>
+        <DeweyDecimalNumber>658.834082</DeweyDecimalNumber>
+        <EAN>9780814408155</EAN>
+        <Edition>1st</Edition>
+        <ISBN>081440815X</ISBN>
+        <Label>AMACOM</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Published</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>2300</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$23.00</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>AMACOM</Manufacturer>
+        <NumberOfItems>1</NumberOfItems>
+        <NumberOfPages>224</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">100</Height>
+          <Length Units="hundredths-inches">910</Length>
+          <Weight Units="hundredths-pounds">100</Weight>
+          <Width Units="hundredths-inches">630</Width>
+        </PackageDimensions>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>2004-06</PublicationDate>
+        <Publisher>AMACOM</Publisher>
+        <Studio>AMACOM</Studio>
+        <Title>Don't Think Pink: What Really Makes Women Buy -- and How to Increase Your Share of This Crucial Market</Title>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</ItemSearchResponse>

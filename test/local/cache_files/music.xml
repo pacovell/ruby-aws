@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2009-01-06">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Ruby/Amazon/AWS 0.4.4"/>
+    </HTTPHeaders>
+    <RequestId>20d3b9aa-0f50-496f-b6c7-facc307b2952</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemSearch"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="AWSAccessKeyId" Value="15QN36861J5Q5KH0KZR2"/>
+      <Argument Name="ResponseGroup" Value="Small,ItemAttributes"/>
+      <Argument Name="ItemPage" Value="5"/>
+      <Argument Name="AssociateTag" Value="reagif-20"/>
+      <Argument Name="SearchIndex" Value="Classical"/>
+      <Argument Name="Version" Value="2009-01-06"/>
+      <Argument Name="Keywords" Value="pink"/>
+    </Arguments>
+    <RequestProcessingTime>0.3189410000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemSearchRequest>
+        <Condition>New</Condition>
+        <DeliveryMethod>Ship</DeliveryMethod>
+        <ItemPage>5</ItemPage>
+        <Keywords>pink</Keywords>
+        <MerchantId>Amazon</MerchantId>
+        <ResponseGroup>Small</ResponseGroup>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ReviewSort>-SubmissionDate</ReviewSort>
+        <SearchIndex>Classical</SearchIndex>
+      </ItemSearchRequest>
+    </Request>
+    <TotalResults>71</TotalResults>
+    <TotalPages>8</TotalPages>
+    <Item>
+      <ASIN>B0000049PZ</ASIN>
+      <DetailPageURL>http://www.amazon.com/Robert-Starer-Excursions-Pianist/dp/B0000049PZ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0000049PZ</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Robert-Starer-Excursions-Pianist/dp/tech-data/B0000049PZ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0000049PZ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0000049PZ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0000049PZ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0000049PZ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0000049PZ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0000049PZ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000049PZ</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Robert Starer</Creator>
+        <Creator Role="Performer">Gerald Berthiaume</Creator>
+        <EAN>0034061020523</EAN>
+        <Label>Albany Records</Label>
+        <ListPrice>
+          <Amount>1798</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$17.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Albany Records</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Albany Records</Publisher>
+        <ReleaseDate>1996-12-17</ReleaseDate>
+        <Studio>Albany Records</Studio>
+        <Title>Robert Starer: Excursions for a Pianist</Title>
+        <UPC>034061020523</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000003XOJ</ASIN>
+      <DetailPageURL>http://www.amazon.com/Classic-Scores-Mancini-Arranged-Nestor/dp/B000003XOJ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000003XOJ</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Classic-Scores-Mancini-Arranged-Nestor/dp/tech-data/B000003XOJ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000003XOJ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000003XOJ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000003XOJ%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000003XOJ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000003XOJ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000003XOJ%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003XOJ</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Performer">Dennis Karmazan</Creator>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <Creator Role="Performer">Francisco J. Castillo</Creator>
+        <Creator Role="Performer">Robert Shulgold</Creator>
+        <Creator Role="Performer">Gregg Nestor</Creator>
+        <Creator Role="Performer">William Kanengiser</Creator>
+        <Creator Role="Performer">David McKelvy</Creator>
+        <Creator Role="Performer">Alex Iles</Creator>
+        <EAN>0021475010691</EAN>
+        <Label>Cambria Records</Label>
+        <ListPrice>
+          <Amount>1798</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$17.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Cambria Records</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <OriginalReleaseDate>1991-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Cambria Records</Publisher>
+        <ReleaseDate>1996-02-05</ReleaseDate>
+        <Studio>Cambria Records</Studio>
+        <Title>Classic Film Scores of Henry Mancini Arranged by Gregg Nestor</Title>
+        <UPC>021475010691</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0000034M9</ASIN>
+      <DetailPageURL>http://www.amazon.com/Anechoic-Orchestral-Music-Recording/dp/B0000034M9%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0000034M9</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Anechoic-Orchestral-Music-Recording/dp/tech-data/B0000034M9%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0000034M9%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0000034M9%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0000034M9%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0000034M9%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0000034M9%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0000034M9%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0000034M9</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Ludwig van Beethoven</Creator>
+        <Creator Role="Composer">Georges Bizet</Creator>
+        <Creator Role="Composer">Johannes Brahms</Creator>
+        <Creator Role="Composer">Anton Bruckner</Creator>
+        <Creator Role="Composer">Claude Debussy</Creator>
+        <Creator Role="Composer">Mikhail Glinka</Creator>
+        <Creator Role="Composer">George Frederick Handel</Creator>
+        <Creator Role="Composer">Gustav Mahler</Creator>
+        <Creator Role="Composer">Felix Mendelssohn</Creator>
+        <Creator Role="Composer">Wolfgang Amadeus Mozart</Creator>
+        <Creator Role="Composer">Recorded Sound</Creator>
+        <Creator Role="Composer">Johann II and Josef Strauss</Creator>
+        <Creator Role="Composer">Pyotr Il'yich Tchaikovsky</Creator>
+        <Creator Role="Composer">Giuseppe Verdi</Creator>
+        <Creator Role="Conductor">Masahiko Enkoji</Creator>
+        <Creator Role="Orchestra">Osaka Philharmonic Orchestra</Creator>
+        <EAN>0081759017105</EAN>
+        <Label>Denon Records</Label>
+        <ListPrice>
+          <Amount>2698</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$26.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Denon Records</Manufacturer>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Denon Records</Publisher>
+        <ReleaseDate>1995-12-12</ReleaseDate>
+        <Studio>Denon Records</Studio>
+        <Title>Anechoic Orchestral Music Recording</Title>
+        <UPC>081759017105</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00005K9S5</ASIN>
+      <DetailPageURL>http://www.amazon.com/Lost-Boston-Ultimate-Collection/dp/B00005K9S5%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00005K9S5</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Lost-Boston-Ultimate-Collection/dp/tech-data/B00005K9S5%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00005K9S5%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00005K9S5%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00005K9S5%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00005K9S5%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00005K9S5%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00005K9S5%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005K9S5</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Artist>Leroy Anderson</Artist>
+        <Artist>Burt Bacharach</Artist>
+        <Artist>Irving Berlin</Artist>
+        <Artist>Leonard Bernstein</Artist>
+        <Artist>Jerry Bock</Artist>
+        <Artist>Jule Charlap Mark / Styne</Artist>
+        <Artist>Cy Coleman</Artist>
+        <Artist>Stephen Flaherty</Artist>
+        <Artist>Robert Forrest George / Wright</Artist>
+        <Artist>Billy Goldenberg</Artist>
+        <Artist>John Harold Kander</Artist>
+        <Artist>Harvey Schmidt</Artist>
+        <Artist>Stephen Schwartz</Artist>
+        <Artist>Charles Strouse</Artist>
+        <Artist>Jule Styne</Artist>
+        <Artist>Bradford Ellis</Artist>
+        <Artist>Alet Oury</Artist>
+        <Artist>Debbie Gravitte</Artist>
+        <Artist>Debbie Pavelka</Artist>
+        <Artist>Glory Crampton</Artist>
+        <Artist>Guy Haines</Artist>
+        <Artist>Harry Groener</Artist>
+        <Artist>Jane Krakowski</Artist>
+        <Artist>Judy Malloy</Artist>
+        <Artist>Karen Morrow</Artist>
+        <Artist>Lillias White</Artist>
+        <Artist>Lindsay Ridgeway</Artist>
+        <Artist>Lisa Mayer</Artist>
+        <Artist>Liz Callaway</Artist>
+        <Artist>Liz Larsen</Artist>
+        <Artist>Lynne Wintersteller</Artist>
+        <Artist>Lynnette Perry</Artist>
+        <Artist>Michael Rupert</Artist>
+        <Artist>Michele Pawk</Artist>
+        <Artist>Michelle Nicastro</Artist>
+        <Artist>Richard Roland</Artist>
+        <Artist>Sal Viviano</Artist>
+        <Binding>Audio CD</Binding>
+        <EAN>0030206211023</EAN>
+        <Label>Varese Sarabande</Label>
+        <ListPrice>
+          <Amount>1798</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$17.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Varese Sarabande</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <OriginalReleaseDate>2001-06-05</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Varese Sarabande</Publisher>
+        <ReleaseDate>2001-06-05</ReleaseDate>
+        <Studio>Varese Sarabande</Studio>
+        <Title>Lost in Boston - The Ultimate Collection</Title>
+        <UPC>030206211023</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00002724D</ASIN>
+      <DetailPageURL>http://www.amazon.com/The-Music-of-Henry-Mancini/dp/B00002724D%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00002724D</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/The-Music-of-Henry-Mancini/dp/tech-data/B00002724D%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00002724D%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00002724D%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00002724D%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00002724D%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00002724D%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00002724D%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00002724D</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <Creator Role="Orchestra">Richard Hayman</Creator>
+        <Creator Role="Orchestra">Richard Hayman Symphony Orchestra</Creator>
+        <EAN>0730099903820</EAN>
+        <Label>Naxos</Label>
+        <ListPrice>
+          <Amount>799</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$7.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Naxos</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Naxos</Publisher>
+        <ReleaseDate>1994-02-15</ReleaseDate>
+        <Studio>Naxos</Studio>
+        <Title>The Music of Henry Mancini</Title>
+        <UPC>730099903820</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00004V9Y3</ASIN>
+      <DetailPageURL>http://www.amazon.com/Art-Complex-Simplicity-Kerrs-Pink/dp/B00004V9Y3%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00004V9Y3</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Art-Complex-Simplicity-Kerrs-Pink/dp/tech-data/B00004V9Y3%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00004V9Y3%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00004V9Y3%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00004V9Y3%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00004V9Y3%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00004V9Y3%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00004V9Y3%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004V9Y3</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Artist>Kerrs Pink</Artist>
+        <Binding>Audio CD</Binding>
+        <EAN>3426300042194</EAN>
+        <Format>Import</Format>
+        <Label>Musea</Label>
+        <ListPrice>
+          <Amount>2399</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$23.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Musea</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <OriginalReleaseDate>1997-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Musea</Publisher>
+        <ReleaseDate>2006-06-01</ReleaseDate>
+        <Studio>Musea</Studio>
+        <Title>Art of Complex Simplicity</Title>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000003J3W</ASIN>
+      <DetailPageURL>http://www.amazon.com/Little-Tunes-Big-Bassoon/dp/B000003J3W%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000003J3W</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Little-Tunes-Big-Bassoon/dp/tech-data/B000003J3W%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000003J3W%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000003J3W%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000003J3W%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000003J3W%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000003J3W%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000003J3W%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000003J3W</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Performer">Susan Nigro</Creator>
+        <Creator Role="Composer">Anonymous</Creator>
+        <Creator Role="Composer">Eugene Bozza</Creator>
+        <Creator Role="Composer">Luigi Cherubini</Creator>
+        <Creator Role="Composer">Arcangelo Corelli</Creator>
+        <Creator Role="Composer">William Davis</Creator>
+        <Creator Role="Composer">Claude Debussy</Creator>
+        <Creator Role="Composer">Paul Desmond</Creator>
+        <Creator Role="Composer">Julius Fucik</Creator>
+        <Creator Role="Composer">Francesco Geminiani</Creator>
+        <Creator Role="Composer">Ruth Gipps</Creator>
+        <Creator Role="Composer">Earle H. Hagen</Creator>
+        <Creator Role="Composer">Harold Laudenslager</Creator>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <Creator Role="Composer">Ferdinand del Negor</Creator>
+        <Creator Role="Composer">Robert Organn</Creator>
+        <Creator Role="Composer">Burrill Phillips</Creator>
+        <Creator Role="Performer">Mark Lindeblad</Creator>
+        <EAN>0009414734822</EAN>
+        <Label>Crystal Records</Label>
+        <ListPrice>
+          <Amount>1699</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$16.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Crystal Records</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Crystal Records</Publisher>
+        <ReleaseDate>1996-05-28</ReleaseDate>
+        <Studio>Crystal Records</Studio>
+        <Title>Little Tunes for the Big Bassoon</Title>
+        <UPC>009414734822</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00005Y0OA</ASIN>
+      <DetailPageURL>http://www.amazon.com/Legends/dp/B00005Y0OA%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00005Y0OA</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Legends/dp/tech-data/B00005Y0OA%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00005Y0OA%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00005Y0OA%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00005Y0OA%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00005Y0OA%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00005Y0OA%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00005Y0OA%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00005Y0OA</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Harold / Mercer, Johnny Arlen</Creator>
+        <Creator Role="Composer">Burt Bacharach</Creator>
+        <Creator Role="Composer">John Barry</Creator>
+        <Creator Role="Composer">Ludwig van Beethoven</Creator>
+        <Creator Role="Composer">Elmer Bernstein</Creator>
+        <Creator Role="Composer">Bryan Adams / Michael Kamen / Robert John Lange</Creator>
+        <Creator Role="Composer">Ray Evans</Creator>
+        <Creator Role="Composer">Sammy Fain</Creator>
+        <Creator Role="Composer">Erroll Garner</Creator>
+        <Creator Role="Composer">Bob / Bauduc, Ray Haggart</Creator>
+        <Creator Role="Composer">Isaac Hayes</Creator>
+        <Creator Role="Composer">Herman Hupfeld</Creator>
+        <Creator Role="Composer">Francis Lai</Creator>
+        <Creator Role="Composer">Michel Legrand</Creator>
+        <Creator Role="Composer">Frederick Loewe</Creator>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <Creator Role="Composer">Johnny Alfred Mandel</Creator>
+        <Creator Role="Composer">Ennio Morricone</Creator>
+        <Creator Role="Composer">Alfred Newman</Creator>
+        <Creator Role="Composer">Ray Noble</Creator>
+        <EAN>0743219109927</EAN>
+        <Format>Box set</Format>
+        <Format>Import</Format>
+        <Label>Bmg Int'l</Label>
+        <ListPrice>
+          <Amount>2749</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$27.49</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Bmg Int'l</Manufacturer>
+        <NumberOfDiscs>3</NumberOfDiscs>
+        <OriginalReleaseDate>2002-03-19</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Bmg Int'l</Publisher>
+        <ReleaseDate>2002-04-09</ReleaseDate>
+        <Studio>Bmg Int'l</Studio>
+        <Title>Legends</Title>
+        <UPC>743219109927</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00004W47H</ASIN>
+      <DetailPageURL>http://www.amazon.com/Classical-Collection-Part-Vanessa-Mae-Classics/dp/B00004W47H%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00004W47H</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Classical-Collection-Part-Vanessa-Mae-Classics/dp/tech-data/B00004W47H%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00004W47H%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00004W47H%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00004W47H%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00004W47H%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00004W47H%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00004W47H%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00004W47H</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Ludwig van Beethoven</Creator>
+        <Creator Role="Composer">John Bettis</Creator>
+        <Creator Role="Composer">Johannes Brahms</Creator>
+        <Creator Role="Composer">Marius Casadesus</Creator>
+        <Creator Role="Composer">Mario Castelnuovo-Tedesco</Creator>
+        <Creator Role="Composer">Edward Elgar</Creator>
+        <Creator Role="Composer">George Gershwin</Creator>
+        <Creator Role="Composer">Dmitry Kabalevsky</Creator>
+        <Creator Role="Composer">Fritz Kreisler</Creator>
+        <Creator Role="Performer">Vanessa-Mae</Creator>
+        <EAN>0724356745629</EAN>
+        <Format>Box set</Format>
+        <Label>EMI Classics</Label>
+        <ListPrice>
+          <Amount>3298</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$32.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>EMI Classics</Manufacturer>
+        <NumberOfDiscs>3</NumberOfDiscs>
+        <OriginalReleaseDate>1991-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">102</Height>
+          <Length Units="hundredths-inches">535</Length>
+          <Weight Units="hundredths-pounds">75</Weight>
+          <Width Units="hundredths-inches">488</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>EMI Classics</Publisher>
+        <ReleaseDate>2000-11-07</ReleaseDate>
+        <Studio>EMI Classics</Studio>
+        <Title>The Classical Collection, Part 1 / Vanessa-Mae (3 CD Box Set) (EMI Classics)</Title>
+        <UPC>724356745629</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000008I2M</ASIN>
+      <DetailPageURL>http://www.amazon.com/Premier-Pops/dp/B000008I2M%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000008I2M</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Premier-Pops/dp/tech-data/B000008I2M%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000008I2M%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000008I2M%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000008I2M%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000008I2M%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000008I2M%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000008I2M%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000008I2M</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Audio CD</Binding>
+        <Creator Role="Composer">Henry Mancini</Creator>
+        <Creator Role="Conductor">Henry Mancini</Creator>
+        <Creator Role="Performer">Henry Mancini</Creator>
+        <Creator Role="Orchestra">Royal Philharmonic Pops Orchestra</Creator>
+        <EAN>0081757232029</EAN>
+        <Label>Denon Records</Label>
+        <ListPrice>
+          <Amount>1198</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$11.98</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Denon Records</Manufacturer>
+        <NumberOfDiscs>1</NumberOfDiscs>
+        <OriginalReleaseDate>1988-01-01</OriginalReleaseDate>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">54</Height>
+          <Length Units="hundredths-inches">555</Length>
+          <Weight Units="hundredths-pounds">18</Weight>
+          <Width Units="hundredths-inches">497</Width>
+        </PackageDimensions>
+        <ProductGroup>Music</ProductGroup>
+        <ProductTypeName>ABIS_MUSIC</ProductTypeName>
+        <Publisher>Denon Records</Publisher>
+        <ReleaseDate>1994-08-05</ReleaseDate>
+        <Studio>Denon Records</Studio>
+        <Title>Premier Pops</Title>
+        <UPC>081757232029</UPC>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</ItemSearchResponse>

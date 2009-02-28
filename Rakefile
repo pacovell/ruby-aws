@@ -1,23 +1,51 @@
-require 'rubygems'
 require 'rake'
- 
-# ----- Default: Testing ------
- 
-if ENV["RUN_CODE_RUN"] == "true"
-  task :default => :"test:rails_compatibility"
-else
-  task :default => :test
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |s|
+    s.name = "ruby-aws"
+    s.summary = %Q{TODO}
+    s.email = "pac@hollownest.com"
+    s.homepage = "http://github.com/hollownest/ruby-aws"
+    s.description = "TODO"
+    s.authors = ["hollownest"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
 end
- 
+
+require 'rake/rdoctask'
+Rake::RDocTask.new do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = 'pacraws'
+  rdoc.options << '--line-numbers' << '--inline-source'
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
+
 require 'rake/testtask'
- 
-Rake::TestTask.new do |t|
-  t.libs << 'lib'
-  test_files = FileList['test/**/*.rb']
-  t.test_files = test_files
-  t.verbose = true
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib' << 'test'
+  t.pattern = 'test/**/*.rb'
+  t.verbose = false
 end
-Rake::Task[:test].send(:add_comment, <<END)
-To run with an alternate version of Rails, make test/rails a symlink to that version.
-END
- 
+
+begin
+  require 'rcov/rcovtask'
+  Rcov::RcovTask.new do |t|
+    t.libs << 'test'
+    t.test_files = FileList['test/**/*_test.rb']
+    t.verbose = true
+  end
+rescue LoadError
+  puts "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+end
+
+begin
+  require 'cucumber/rake/task'
+  Cucumber::Rake::Task.new(:features)
+rescue LoadError
+  puts "Cucumber is not available. In order to run features, you must: sudo gem install cucumber"
+end
+
+task :default => :test

@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2009-01-06">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Ruby/Amazon/AWS 0.4.4"/>
+    </HTTPHeaders>
+    <RequestId>e722cb2a-3605-4029-895e-bfbf0efed2a5</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemSearch"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="AWSAccessKeyId" Value="15QN36861J5Q5KH0KZR2"/>
+      <Argument Name="ResponseGroup" Value="Small,ItemAttributes"/>
+      <Argument Name="ItemPage" Value="4"/>
+      <Argument Name="AssociateTag" Value="reagif-20"/>
+      <Argument Name="SearchIndex" Value="Electronics"/>
+      <Argument Name="Version" Value="2009-01-06"/>
+      <Argument Name="Keywords" Value="pink"/>
+    </Arguments>
+    <RequestProcessingTime>0.2935040000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemSearchRequest>
+        <Condition>New</Condition>
+        <DeliveryMethod>Ship</DeliveryMethod>
+        <ItemPage>4</ItemPage>
+        <Keywords>pink</Keywords>
+        <MerchantId>Amazon</MerchantId>
+        <ResponseGroup>Small</ResponseGroup>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ReviewSort>-SubmissionDate</ReviewSort>
+        <SearchIndex>Electronics</SearchIndex>
+      </ItemSearchRequest>
+    </Request>
+    <TotalResults>6948</TotalResults>
+    <TotalPages>695</TotalPages>
+    <Item>
+      <ASIN>B000T9ME88</ASIN>
+      <DetailPageURL>http://www.amazon.com/SanDisk-Sansa-Shaker-Player-Pink/dp/B000T9ME88%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000T9ME88</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/SanDisk-Sansa-Shaker-Player-Pink/dp/tech-data/B000T9ME88%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000T9ME88%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000T9ME88%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000T9ME88%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000T9ME88%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000T9ME88%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000T9ME88%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000T9ME88</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>1</BatteriesIncluded>
+        <Binding>Electronics</Binding>
+        <Brand>SanDisk</Brand>
+        <Color>Pink</Color>
+        <DisplaySize Units="inches">0</DisplaySize>
+        <EAN>0619659038854</EAN>
+        <Feature>Compact and affordable MP3 player with SD memory card slot</Feature>
+        <Feature>Simply shake device to progress to next track</Feature>
+        <Feature>Built-in speaker and two headphone jacks</Feature>
+        <Feature>Comes with headphones and lanyard</Feature>
+        <Feature>1-year limited warranty</Feature>
+        <HardwarePlatform>PC</HardwarePlatform>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">282</Height>
+          <Length Units="hundredths-inches">157</Length>
+          <Weight Units="hundredths-pounds">68</Weight>
+          <Width Units="hundredths-inches">157</Width>
+        </ItemDimensions>
+        <Label>SanDisk</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>3999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$39.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>SanDisk</Manufacturer>
+        <MediaType>None</MediaType>
+        <Model>SDMX9N-1024B-A18</Model>
+        <MPN>SDMX9N-1024B-A18</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">330</Height>
+          <Length Units="hundredths-inches">870</Length>
+          <Weight Units="hundredths-pounds">45</Weight>
+          <Width Units="hundredths-inches">600</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>MP3_PLAYER</ProductTypeName>
+        <Publisher>SanDisk</Publisher>
+        <Studio>SanDisk</Studio>
+        <Title>SanDisk Sansa Shaker 1 GB MP3 Player (Pink)</Title>
+        <UPC>619659038854</UPC>
+        <Warranty>1 year warranty</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000V1PXMS</ASIN>
+      <DetailPageURL>http://www.amazon.com/Flip-Video-Ultra-Camcorder-Minutes/dp/B000V1PXMS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000V1PXMS</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Flip-Video-Ultra-Camcorder-Minutes/dp/tech-data/B000V1PXMS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000V1PXMS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000V1PXMS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000V1PXMS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000V1PXMS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000V1PXMS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000V1PXMS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000V1PXMS</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>1</BatteriesIncluded>
+        <Binding>Electronics</Binding>
+        <Brand>Flip Video</Brand>
+        <Color>Pink</Color>
+        <DisplaySize Units="inches">1.5</DisplaySize>
+        <EAN>0892684000458</EAN>
+        <Feature>Simple to use, pocket-sized camcorder with one-touch recording and digital zoom</Feature>
+        <Feature>Holds 60 minutes of full VGA-quality video on 2GB of built-in memory; no tapes or additional memory cards required</Feature>
+        <Feature>Convenient USB arm plugs directly into your computer for easy viewing and sharing</Feature>
+        <Feature>Built-in software lets you easily e-mail videos, upload to YouTube and AOL, and capture still photos from video</Feature>
+        <Feature>Watch videos instantly on TV with included cable</Feature>
+        <FloppyDiskDriveDescription>None</FloppyDiskDriveDescription>
+        <FormFactor>Integrated</FormFactor>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">417</Height>
+          <Length Units="hundredths-inches">125</Length>
+          <Weight Units="hundredths-pounds">90</Weight>
+          <Width Units="hundredths-inches">216</Width>
+        </ItemDimensions>
+        <Label>Pure Digital Technologies, Inc.</Label>
+        <LensType>Lens</LensType>
+        <ListPrice>
+          <Amount>14999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$149.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Pure Digital Technologies, Inc.</Manufacturer>
+        <MediaType>Flash card</MediaType>
+        <Model>F260P</Model>
+        <MPN>F260P</MPN>
+        <OpticalSensorResolution Units="MP">0.31</OpticalSensorResolution>
+        <OpticalZoom Units="unknown-units">0</OpticalZoom>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">430</Height>
+          <Length Units="hundredths-inches">710</Length>
+          <Weight Units="hundredths-pounds">80</Weight>
+          <Width Units="hundredths-inches">480</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>Photography</ProductGroup>
+        <ProductTypeName>CAMCORDER</ProductTypeName>
+        <ProductTypeSubcategory>other-digital-camcorder</ProductTypeSubcategory>
+        <Publisher>Pure Digital Technologies, Inc.</Publisher>
+        <SpecialFeatures>nv:Size^1/4-inch|Movie Resolution^640 x 480|Memory Included^2GB Internal|Movie File Format^AVI (MPEG-4)|Digital Zoom^2X|LCD Monitor^1.5-inch|LCD Coverage^100%|Maximum Aperture^f 2.4|Movie Mode^30 fps|Movie Image Resolution^640 x 480|Movie Audio^Yes|Computer Interface^USB 2.0 high-speed|Video Out^NTSC Standard|Battery Form Factor^AA|Batteries Included^No|Battery Charger Included^No|Height^4.17 inches|Width^2.25 inches</SpecialFeatures>
+        <Studio>Pure Digital Technologies, Inc.</Studio>
+        <Style>60 Minutes (Pink)</Style>
+        <Title>Flip Video Ultra Series Camcorder, 60 Minutes (Pink)</Title>
+        <UPC>892684000458</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B0011Z9VNU</ASIN>
+      <DetailPageURL>http://www.amazon.com/Panasonic-DMC-FS20P-Digital-Optical-Stabilized/dp/B0011Z9VNU%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0011Z9VNU</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Panasonic-DMC-FS20P-Digital-Optical-Stabilized/dp/tech-data/B0011Z9VNU%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0011Z9VNU%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0011Z9VNU%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0011Z9VNU%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0011Z9VNU%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0011Z9VNU%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0011Z9VNU%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0011Z9VNU</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>0</BatteriesIncluded>
+        <Binding>Electronics</Binding>
+        <Brand>Panasonic</Brand>
+        <Color>Pink</Color>
+        <Connectivity>AV</Connectivity>
+        <DigitalZoom Units="x">4</DigitalZoom>
+        <DisplaySize Units="inches">3</DisplaySize>
+        <EAN>0037988987191</EAN>
+        <Feature>10-megapixel resolution captures enough detail for poster-sized prints</Feature>
+        <Feature>4x wide-angle optical zoom; Mega Optical Image Stabilized</Feature>
+        <Feature>3.0-inch Intelligent LCD; Face Detection</Feature>
+        <Feature>Intelligent ISO; Intelligent Scene Selector</Feature>
+        <Feature>50 MB built-in memory; captures images to SD memory cards (not included)</Feature>
+        <FloppyDiskDriveDescription>None</FloppyDiskDriveDescription>
+        <FormFactor>Built-in</FormFactor>
+        <HasRedEyeReduction>1</HasRedEyeReduction>
+        <IncludedSoftware>Yes</IncludedSoftware>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">372</Height>
+          <Length Units="hundredths-inches">203</Length>
+          <Weight Units="hundredths-pounds">70</Weight>
+          <Width Units="hundredths-inches">94</Width>
+        </ItemDimensions>
+        <Label>Panasonic</Label>
+        <LensType>Zoom lens</LensType>
+        <ListPrice>
+          <Amount>24995</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$249.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Panasonic</Manufacturer>
+        <MaximumFocalLength Units="millimeters">20.8</MaximumFocalLength>
+        <MaximumResolution Units="MP">10</MaximumResolution>
+        <MinimumFocalLength Units="millimeters">5.2</MinimumFocalLength>
+        <Model>DMC-FS20P</Model>
+        <MPN>DMC-FS20P</MPN>
+        <OpticalSensorResolution Units="MP">10</OpticalSensorResolution>
+        <OpticalZoom Units="x">4</OpticalZoom>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">210</Height>
+          <Length Units="hundredths-inches">750</Length>
+          <Weight Units="hundredths-pounds">125</Weight>
+          <Width Units="hundredths-inches">560</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>Photography</ProductGroup>
+        <ProductTypeName>CAMERA_DIGITAL</ProductTypeName>
+        <ProductTypeSubcategory>point-and-shoot</ProductTypeSubcategory>
+        <Publisher>Panasonic</Publisher>
+        <ReleaseDate>2008-03-01</ReleaseDate>
+        <Studio>Panasonic</Studio>
+        <Title>Panasonic Lumix DMC-FS20P 10MP Digital Camera with 4x Wide Angle MEGA Optical Image Stabilized Zoom (Pink)</Title>
+        <UPC>037988987191</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001F50UI6</ASIN>
+      <DetailPageURL>http://www.amazon.com/Sony-Walkman-Video-Player-Pink/dp/B001F50UI6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001F50UI6</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sony-Walkman-Video-Player-Pink/dp/tech-data/B001F50UI6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001F50UI6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001F50UI6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001F50UI6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001F50UI6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001F50UI6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001F50UI6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001F50UI6</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>1</BatteriesIncluded>
+        <Binding>Electronics</Binding>
+        <Brand>Sony</Brand>
+        <Color>Pink</Color>
+        <DisplaySize Units="inches">2</DisplaySize>
+        <EAN>0027242747814</EAN>
+        <Feature>4 GB capacity for up to 925 songs or 15 hours of video</Feature>
+        <Feature>Enjoy up to 45 hours of continuous music or 8 hours of video on a single charge</Feature>
+        <Feature>2-inch TFT color display with white LED-backlight, QVGA (240 x 320 Pixels) resolution, and 262,144 colors</Feature>
+        <Feature>Supported audio formats: MP3, WMA, AAC-LC, and Linear PCM; supported video formats: AVC(H.264/AVC), MPEG-4, Windows Media Video 9</Feature>
+        <Feature>1-year limited warranty</Feature>
+        <HardwarePlatform>PC</HardwarePlatform>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">701</Height>
+          <Length Units="hundredths-inches">142</Length>
+          <Weight Units="hundredths-pounds">37</Weight>
+          <Width Units="hundredths-inches">500</Width>
+        </ItemDimensions>
+        <Label>Sony</Label>
+        <ListPrice>
+          <Amount>9995</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$99.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Sony</Manufacturer>
+        <MediaType>None</MediaType>
+        <Model>NWZE436FPNK</Model>
+        <MPN>NWZE436FPNK</MPN>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>MP3_PLAYER</ProductTypeName>
+        <Publisher>Sony</Publisher>
+        <Size>4 GB</Size>
+        <SpecialFeatures>nv:Supported Formats^MP3|Supported Formats^WMA|Supported Formats^WMV|Supported Formats^MPEG 4|Supported Formats^H.264 video|Supported Formats^AVC|Internal Storage^4GB|Display Type^2" QVGA|Interface^Hi-Speed USB|Special Features^FM Tuner|Power Source^Built-in Rechargeable Li-ion Battery|Dimensions^1 3/4" x 3 3/8" x 11/32"</SpecialFeatures>
+        <Studio>Sony</Studio>
+        <Title>Sony 4 GB Walkman Video MP3 Player (Pink)</Title>
+        <UPC>027242747814</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001O8UJR6</ASIN>
+      <DetailPageURL>http://www.amazon.com/Acer-Aspire-AOA150-1068-8-9-Inch-Netbook/dp/B001O8UJR6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001O8UJR6</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Acer-Aspire-AOA150-1068-8-9-Inch-Netbook/dp/tech-data/B001O8UJR6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001O8UJR6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001O8UJR6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001O8UJR6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001O8UJR6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001O8UJR6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001O8UJR6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001O8UJR6</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>1</BatteriesIncluded>
+        <Binding>Personal Computers</Binding>
+        <Brand>Acer</Brand>
+        <Color>Pink</Color>
+        <CPUManufacturer>Intel</CPUManufacturer>
+        <CPUSpeed Units="GHz">1.6</CPUSpeed>
+        <CPUType>Intel Core Solo</CPUType>
+        <DisplaySize Units="inches">8.9</DisplaySize>
+        <EAN>0884483383603</EAN>
+        <Feature>Intel Atom N270 1.6GHz Processor, 6 Cell Battery (5 1/2 Hour Battery Life)</Feature>
+        <Feature>8.9-inch WSVGA Acer CrystalBrite TFT LCD (1024 x 600)</Feature>
+        <Feature>Mobile Intel 945GSE Express Chipset, Multi-in-1 Digital Media Card Reader</Feature>
+        <Feature>1024MB DDR2 533 MHz SDRAM Single Channel Memory; Integrated Intel Graphics Media Accelerator 950; 160GB SATA 5400RPM Hard Drive</Feature>
+        <Feature>Windows XP Home, Mouse Included</Feature>
+        <HardDiskSize Units="GB">160</HardDiskSize>
+        <HardDiskInterface>Serial ATA</HardDiskInterface>
+        <HardwarePlatform>PC</HardwarePlatform>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">142</Height>
+          <Length Units="hundredths-inches">670</Length>
+          <Weight Units="hundredths-pounds">244</Weight>
+          <Width Units="hundredths-inches">980</Width>
+        </ItemDimensions>
+        <Label>Acer</Label>
+        <ListPrice>
+          <Amount>32999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$329.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Acer</Manufacturer>
+        <Model>AOA150-1068- PINK</Model>
+        <MPN>AOA150-1068</MPN>
+        <OperatingSystem>Windows XP Home Edition</OperatingSystem>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">420</Height>
+          <Length Units="hundredths-inches">1310</Length>
+          <Weight Units="hundredths-pounds">530</Weight>
+          <Width Units="hundredths-inches">860</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProcessorCount>1</ProcessorCount>
+        <ProductGroup>Personal Computer</ProductGroup>
+        <ProductTypeName>NOTEBOOK_COMPUTER</ProductTypeName>
+        <Publisher>Acer</Publisher>
+        <Studio>Acer</Studio>
+        <SystemMemorySize Units="MB">1000</SystemMemorySize>
+        <SystemMemoryType>DDR2 SDRAM</SystemMemoryType>
+        <Title>Acer Aspire One AOA150-1068 8.9-Inch Netbook - Pink</Title>
+        <UPC>884483383603</UPC>
+        <VariationDescription>Pink</VariationDescription>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000RN3X4U</ASIN>
+      <DetailPageURL>http://www.amazon.com/SanDisk-Sansa-c240-Digital-player/dp/B000RN3X4U%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000RN3X4U</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/SanDisk-Sansa-c240-Digital-player/dp/tech-data/B000RN3X4U%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000RN3X4U%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000RN3X4U%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000RN3X4U%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000RN3X4U%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000RN3X4U%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000RN3X4U%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000RN3X4U</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Brand>SanDisk</Brand>
+        <Color>Pink</Color>
+        <EAN>0619659034399</EAN>
+        <Feature>Stores up to 1GB of audio</Feature>
+        <Feature>Color screen display for cover art and photo thumbnails (up to 64,000 colors)</Feature>
+        <Feature>Easy-to-use interface for sorting and playing back music</Feature>
+        <Feature>Digital FM tuner with 20 preset stations</Feature>
+        <Feature>FM on the fly recording and voice recording</Feature>
+        <HardwarePlatform>PC</HardwarePlatform>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">188</Height>
+          <Length Units="hundredths-inches">925</Length>
+          <Weight Units="hundredths-pounds">50</Weight>
+          <Width Units="hundredths-inches">713</Width>
+        </ItemDimensions>
+        <Label>SanDisk</Label>
+        <ListPrice>
+          <Amount>6499</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$64.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>SanDisk</Manufacturer>
+        <MediaType>None</MediaType>
+        <Model>C240</Model>
+        <MPN>SDMX7-1024B-A18</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">80</Height>
+          <Length Units="hundredths-inches">900</Length>
+          <Weight Units="hundredths-pounds">30</Weight>
+          <Width Units="hundredths-inches">680</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>PORTABLE_AUDIO</ProductTypeName>
+        <Publisher>SanDisk</Publisher>
+        <Studio>SanDisk</Studio>
+        <Title>SanDisk Sansa c240 - Digital player / radio - flash 1 GB - WMA, MP3  (Pink)</Title>
+        <UPC>619659034399</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000GA3RS6</ASIN>
+      <DetailPageURL>http://www.amazon.com/Caselogic-UNP-2Pink-Universal-Neoprene-Pocket/dp/B000GA3RS6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000GA3RS6</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Caselogic-UNP-2Pink-Universal-Neoprene-Pocket/dp/tech-data/B000GA3RS6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000GA3RS6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000GA3RS6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000GA3RS6%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000GA3RS6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000GA3RS6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000GA3RS6%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000GA3RS6</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Kitchen</Binding>
+        <Brand>Case Logic</Brand>
+        <Color>Pink/White</Color>
+        <EAN>0044476032387</EAN>
+        <Feature>Form-fitting, protective neoprene material</Feature>
+        <Feature>Easy access to hardware</Feature>
+        <Feature>Adjustable lanyard and carabineer</Feature>
+        <Feature>Perfect for most MP3 players, compact cameras, cell phones and other personal devices</Feature>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">866</Height>
+          <Length Units="hundredths-inches">331</Length>
+          <Weight Units="hundredths-pounds">800</Weight>
+          <Width Units="hundredths-inches">79</Width>
+        </ItemDimensions>
+        <Label>Case Logic</Label>
+        <LegalDisclaimer>Warranty does not cover misuse of product.</LegalDisclaimer>
+        <ListPrice>
+          <Amount>799</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$7.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Case Logic</Manufacturer>
+        <Model>UNP-2Pink</Model>
+        <MPN>UNP-2Pink</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">102</Height>
+          <Length Units="hundredths-inches">866</Length>
+          <Weight Units="hundredths-pounds">9</Weight>
+          <Width Units="hundredths-inches">299</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>ACCESSORY_OR_PART_OR_SUPPLY</ProductTypeName>
+        <Publisher>Case Logic</Publisher>
+        <Studio>Case Logic</Studio>
+        <Title>Caselogic UNP-2Pink Universal Neoprene Pocket - Medium (Pink/White)</Title>
+        <UPC>085854101936</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001BP22F4</ASIN>
+      <DetailPageURL>http://www.amazon.com/Coby-CVE51PNK-Jammerz-Isolating-Earphones/dp/B001BP22F4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001BP22F4</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Coby-CVE51PNK-Jammerz-Isolating-Earphones/dp/tech-data/B001BP22F4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001BP22F4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001BP22F4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001BP22F4%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001BP22F4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001BP22F4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001BP22F4%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001BP22F4</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Coby</Brand>
+        <Color>pink</Color>
+        <EAN>0716829229156</EAN>
+        <Feature>In-ear isolation design lets you listen without distraction</Feature>
+        <Feature>9mm neodymium drivers deliver rich sound with powerful bass response</Feature>
+        <Feature>3.5mm gold plated L-shape stereo plug</Feature>
+        <Feature>Personalize your look with 6 color styles</Feature>
+        <Feature>1 year warranty</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">450</Height>
+          <Length Units="hundredths-inches">125</Length>
+          <Weight Units="hundredths-pounds">10</Weight>
+          <Width Units="hundredths-inches">275</Width>
+        </ItemDimensions>
+        <Label>Coby</Label>
+        <ListPrice>
+          <Amount>595</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$5.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Coby</Manufacturer>
+        <Model>CVE51PNK</Model>
+        <MPN>CVE51PNK</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">80</Height>
+          <Length Units="hundredths-inches">650</Length>
+          <Weight Units="hundredths-pounds">5</Weight>
+          <Width Units="hundredths-inches">280</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Coby</Publisher>
+        <Studio>Coby</Studio>
+        <Title>Coby CVE51PNK Jammerz Sound Isolating Earphones (Pink)</Title>
+        <UPC>716829229156</UPC>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001B19AFS</ASIN>
+      <DetailPageURL>http://www.amazon.com/Speck-Products-MacBook-13-Inch-Thru/dp/B001B19AFS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001B19AFS</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Speck-Products-MacBook-13-Inch-Thru/dp/tech-data/B001B19AFS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001B19AFS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001B19AFS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001B19AFS%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001B19AFS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001B19AFS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001B19AFS%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001B19AFS</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Speck</Brand>
+        <Color>Pink</Color>
+        <EAN>0875912005555</EAN>
+        <Feature>
+Fits White and Black finish 13" MacBook models (will not fit newer Oct 2008 black keyboard/aluminum unibody models)</Feature>
+        <Feature>Dimensions - Length 1.0 x Width 12.75 x Height 9.0</Feature>
+        <Feature>Weight - 9.0 ounces</Feature>
+        <HardwarePlatform>Mac</HardwarePlatform>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">125</Height>
+          <Length Units="hundredths-inches">1300</Length>
+          <Weight Units="hundredths-pounds">200</Weight>
+          <Width Units="hundredths-inches">925</Width>
+        </ItemDimensions>
+        <Label>Speck Products</Label>
+        <ListPrice>
+          <Amount>6261</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$62.61</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Speck Products</Manufacturer>
+        <MaterialType>Plastic</MaterialType>
+        <MaterialTypeSetElement>Plastic</MaterialTypeSetElement>
+        <Model>MB13-PNK-SEE-V2</Model>
+        <MPN>MB13-PNK-SEE-V2</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">110</Height>
+          <Length Units="hundredths-inches">1290</Length>
+          <Weight Units="hundredths-pounds">640</Weight>
+          <Width Units="hundredths-inches">890</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>CARRYING_CASE_OR_BAG</ProductTypeName>
+        <Publisher>Speck Products</Publisher>
+        <Studio>Speck Products</Studio>
+        <Title>Speck Products MacBook Pro 13-Inch See Thru Hard Case (Pink)</Title>
+        <UPC>875912005555</UPC>
+        <Warranty>1 year warranty</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B000N433W0</ASIN>
+      <DetailPageURL>http://www.amazon.com/iHome-Speaker-System-Alarm-Clock/dp/B000N433W0%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000N433W0</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/iHome-Speaker-System-Alarm-Clock/dp/tech-data/B000N433W0%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB000N433W0%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB000N433W0%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB000N433W0%26SubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B000N433W0%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B000N433W0%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B000N433W0%3FSubscriptionId%3D15QN36861J5Q5KH0KZR2%26tag%3Dreagif-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB000N433W0</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <BatteriesIncluded>0</BatteriesIncluded>
+        <BatteryDescription>1 CR032</BatteryDescription>
+        <Binding>Electronics</Binding>
+        <Brand>Soundesign</Brand>
+        <Color>Pink</Color>
+        <EAN>0047532890341</EAN>
+        <Feature>Compatibility: iPod mini; iPod nano 1G, 2G, 3G; iPod classic 4G, 5G, 5.5G, 6G; iPod touch 1G</Feature>
+        <Feature>Wake and sleep to your music when docking your iPod</Feature>
+        <Feature>EXB Expanded Bass and Reson8 technology for great sound</Feature>
+        <Feature>Battery backup maintains time settings during power failures</Feature>
+        <Feature>Auxiliary MP3 line-in jack</Feature>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="inches">5.9</Height>
+          <Length Units="inches">5.1</Length>
+          <Weight Units="hundredths-pounds">400</Weight>
+          <Width Units="inches">4.3</Width>
+        </ItemDimensions>
+        <Label>Sound Design, Inc.</Label>
+        <ListPrice>
+          <Amount>4999</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$49.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Sound Design, Inc.</Manufacturer>
+        <Model>IH4P</Model>
+        <MPN>IH4P</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">530</Height>
+          <Length Units="hundredths-inches">980</Length>
+          <Weight Units="hundredths-pounds">200</Weight>
+          <Width Units="hundredths-inches">660</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>ACCESSORY_OR_PART_OR_SUPPLY</ProductTypeName>
+        <Publisher>Sound Design, Inc.</Publisher>
+        <Studio>Sound Design, Inc.</Studio>
+        <Title>iHome iH4P Speaker System with Alarm Clock for iPod (Pink)</Title>
+        <UPC>047532890341</UPC>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</ItemSearchResponse>
