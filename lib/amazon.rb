@@ -1,4 +1,4 @@
-# $Id: amazon.rb,v 1.25 2008/10/03 09:35:37 ianmacd Exp $
+# $Id: amazon.rb,v 1.26 2009/01/19 16:45:11 ianmacd Exp $
 #
 
 module Amazon
@@ -63,6 +63,7 @@ module Amazon
     # and are readable.
     #
     def initialize(config_str=nil)
+      locale = nil
 
       if config_str
 
@@ -105,16 +106,24 @@ module Amazon
 	if readable
 
 	  Amazon.dprintf( 'Opening %s ...', cf ) if config_class == File
-    
+
 	  config_class.open( cf ) { |f| lines = f.readlines }.each do |line|
 	    line.chomp!
-    
+
 	    # Skip comments and blank lines.
 	    #
 	    next if line =~ /^(#|$)/
-    
+
 	    Amazon.dprintf( 'Read: %s', line )
-    
+
+	    # Determine whether we're entering the subsection of a new locale.
+	    #
+	    if match = line.match( /^\[(\w+)\]$/ )
+	      locale = match[1]
+	      Amazon.dprintf( "Config locale is now '%s'.", locale )
+	      next
+	    end
+
 	    # Store these, because we'll probably find a use for these later.
 	    #
 	    begin
@@ -125,9 +134,14 @@ module Amazon
 	    rescue NoMethodError, ConfigError
 	      raise ConfigError, "bad config line: #{line}"
 	    end
-    
-	    self[key] = val
-    
+
+	    if locale && locale != 'global'
+	      self[locale] ||= {}
+	      self[locale][key] = val
+	    else
+	      self[key] = val
+	    end
+
 	  end
 	end
 

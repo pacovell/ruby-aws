@@ -1,11 +1,11 @@
-$Id: README,v 1.17 2008/10/03 12:00:19 ianmacd Exp $
+$Id: README,v 1.19 2009/02/20 00:37:15 ianmacd Exp $
 
 
 Introduction
 ------------
 
-Ruby/AWS is a Ruby language library that makes it relatively easy for the
-programmer to retrieve information from the popular Amazon Web site via
+Ruby/AWS is a Ruby language library that aims to make it relatively easy for
+the programmer to retrieve information from the popular Amazon Web site via
 Amazon's Associates Web Services (AWS). In addition to the original amazon.com
 site, the local sites amazon.co.uk, amazon.de, amazon.fr, amazon.ca and
 amazon.co.jp are also supported.
@@ -25,40 +25,43 @@ History and compatibility with Ruby/Amazon
 ------------------------------------------
 
 In the beginning, there was Ruby/Amazon. This library was built around version
-3.x of the Amazon Web Service API and first saw the light of day in 2004. That
-version of the Amazon API was known at the time as AWS 3.x.
+3.x of the Amazon Web Service API and first saw the light of day in January
+2004. The version of the Amazon API in use at the time was known as AWS 3.x.
 
 Amazon later renamed AWS to ECS, or E-Commerce Service, for the launch of
-version 4 of the API, a complete overhaul that provided no backward
+version 4 of their API, a complete overhaul that provided no backward
 compatibility with previous versions. The previous version of the API was
 thenceforth sometimes referred to as ECS 3.
 
 Demonstrating the wisdom and consistency for which large companies are
-globally revered, Amazon changed its mind once again in late 2007, reverting
-to the familiar name of AWS. This time, however, it was said to stand for
-Associates Web Service.
+renowned, Amazon changed their mind once again in late 2007, reverting to the
+familiar name of AWS. This time, however, it was said to stand for Associates
+Web Service, rather than Amazon Web Service.
 
-Since Amazon started offering AWS, the number of Amazon Web APIs has grown.
-AWS is now just one of many. It is therefore no longer appropriate to call
-this library by a name so general as Ruby/Amazon, because it interfaces only
-with AWS. Therefore, the library will be known henceforth as Ruby/AWS.
+Since Amazon first made AWS available, the number of Amazon Web APIs has
+grown and AWS is now just one of many. It is therefore no longer appropriate
+to call this library by a name so general as Ruby/Amazon, because it
+provides an interface to just one of the Amazon Web APIs. Therefore, the
+monicker for this library is Ruby/AWS.
 
 Ruby/AWS is built around version 4 of the Amazon AWS API, which is
 fundamentally different to version 3, both in terms of how requests are made
-and data returned. The underlying structure of the XML response is radically
-changed from previous versions.
+and the data returned. The underlying structure of the XML response has
+radically changed from previous versions.
 
-It has therefore not been possible in Ruby/AWS to retain any level of API
+It has therefore not been practical for Ruby/AWS to retain any level of API
 compatibility with Ruby/Amazon. Unfortunately, this means that any code
-written for Ruby/Amazon will need to be rewritten to work with Ruby/AWS.
+written for Ruby/Amazon will need to be rewritten to work with Ruby/AWS. The
+good news is that, in most cases, this isn't as much work as it might sound.
 
-One small piece of good news is that the /etc/amazonrc and ~/.amazonrc files
-used with Ruby/Amazon _are_ compatible with Ruby/AWS. The only change required
-for Ruby/AWS is the addition of a 'key_id' parameter, which should contain
-your AWS Access Key ID.
+Another bit of good news is that the /etc/amazonrc and ~/.amazonrc files used
+by Ruby/Amazon _are_ compatible with Ruby/AWS. The only change required for
+Ruby/AWS is the addition of a 'key_id' parameter, which should contain your
+AWS Access Key ID. That fact notwithstanding, as of version 0.5.0, Ruby/AWS
+also supports a more flexible, locale-specific configuration syntax.
 
 Amazon finally decomissioned v3 of the AWS API on 2008-03-31. As a result, the
-original Ruby/Amazon library no longer functions.
+original Ruby/Amazon library no longer functions and is therefore obsolete.
 
 
 AWS Access Key ID
@@ -68,26 +71,30 @@ You can obtain an AWS Access Key ID here:
 
   https://aws-portal.amazon.com/gp/aws/developer/registration/index.html
 
-Subscription IDs are deprecated by Amazon and, in any case, not supported by
-Ruby/AWS. Please obtain and use an AWS Access Key ID instead.
+You may see mention of Subscription IDs at the above location. Subscription
+IDs are deprecated by Amazon and, in any case, not supported by Ruby/AWS.
+Please obtain and use an AWS Access Key ID instead.
 
 
 API version
 -----------
 
-Ruby/AWS currently requests the 2008-06-26 revision of the AWS API when
+Ruby/AWS currently requests the 2009-01-06 revision of the AWS API when
 performing its operations:
 
-  http://docs.amazonwebservices.com/AWSECommerceService/2008-03-03/DG/
+  http://docs.amazonwebservices.com/AWSECommerceService/2009-01-06/DG/
+
+However, a different version can be requested via the 'api' parameter in the
+user configuration file.
 
 
 Status and functionality
 ------------------------
 
-Ruby/AWS is currently alpha code. Amongst other things, this means:
+Ruby/AWS is currently beta code. Amongst other things, this means:
 
-- You will probably encounter _many_ bugs. You will certainly encounter a few.
-  If you tell me about them, I will endeavour to fix them.
+- You will encounter bugs, but hopefully not too many and none too serious. If
+  you tell me about them, I will endeavour to fix them.
 
 - The documentation is incomplete, but steadily getting better. Version 0.0.1
   had virtually none, so consider yourself lucky.
@@ -96,7 +103,7 @@ Ruby/AWS is currently alpha code. Amongst other things, this means:
   implemented. Yet others may not be _properly_ implemented.
 
   Nevertheless, the AWS v4 API is now more or less fully supported, with only
-  tiny gaps in the functionality of some operations.
+  small gaps in the functionality of some operations.
 
   Currently implemented operations are:
   
@@ -127,23 +134,35 @@ Ruby/AWS is currently alpha code. Amongst other things, this means:
 
     CartGet
 
-  Multiple operations and batch requests are also supported, but not well
-  tested. Beware of bugs. There appear to also be (undocumented)
+  Multiple operations are supported, but not well tested.
+
+  As of version 0.5.0, batch operations are fully supported, using the
+  Operation#batch method.
+  
+  Beware of bugs in this area. There appear to also be (undocumented)
   Amazon-imposed restrictions on the use of multiple operations and batch
   requests, so some experimentation on your part will probably be required to
   determine what works and what doesn't.
+
+  The 2008-08-19 version of the AWS API added the following operations:
+
+    VehiclePartLookup
+    VehiclePartSearch
+    VehicleSearch
+
+  These are supported by Ruby/AWS as of version 0.5.0
   
 - Classes, methods, constants and instance variables may change name in the
   future. These various objects may appear from nowhere, change shape, grow,
-  shrink or disappear entirely. Indeed, this has already happened once in the
-  evolution from version 0.0.2 to version 0.1.0, breaking existing code in the
-  process.
+  shrink or disappear entirely. Such fundamental changes will almost certainly
+  break existing code, so I will endeavour to keep them to a minimum.
 
 In short, code written to work with this release of Ruby/AWS may stop working
-when you upgrade to the next release. In fact, it may even stop working
-_during_ this release, because it's possible there are circumstances that
-would cause an exception to be raised, that I haven't come across in my
-limited testing of the code.
+when you upgrade to the next. In fact, it may even stop working _during_ this
+release, because it's possible there are circumstances that would cause an
+exception to be raised, that I haven't come across in my limited testing of
+the code. It's also possible that future changes made by Amazon will affect
+Ruby/AWS in unexpected ways.
 
 That said, the Ruby/AWS's API is pretty stable at this point in time. I won't
 break any of the method interfaces without seriously considering the merits of
@@ -163,10 +182,27 @@ Usage
 First of all, create either /etc/amazonrc or ~/.amazonrc. Its contents should
 look something like this:
 
-  key_id = '0Y44V8G41KCQPGF6PTR2'
+  # Any line that starts with a hash character is a comment.
+  key_id = '0Y44V8G41KCQPGF6XYZ2'
   associate = 'fuzbarorg-21'
+  cache = false
+  locale = 'uk'
+
+As of version 0.5.0 of Ruby/AWS, the following locale-specific configuration
+syntax is also supported:
+
+  [global]
+  key_id = '0Y44V8G41KCQPGF6XYZ2'
   locale = 'uk'
   cache = false
+  # Request a specific version of the API.
+  # api = '2008-03-03'
+
+  [uk]
+  associate = 'fuzbarorg-21'
+
+  [us]
+  associate = 'fuzbarorg-20'
 
 Because you're embedding your key ID in the file, you should protect it (on
 UNIX and equivalent systems) by making it mode 0600:
@@ -471,7 +507,7 @@ differs not only by search type, but also by Amazon locale (amazon.com,
 amazon.co.uk, amazon.de, etc.) and is prone to change with each minor revision
 of the Amazon AWS API.
 
-Even worse, even the operations themselves can be illegal in some locales.
+Even worse, the operations themselves can be illegal in certain locales.
 TransactionLookup operations, for example, don't currently work in the UK
 locale, but do work in the US locale.
 
@@ -483,35 +519,40 @@ of the corner cases and handle undocumented quirks.
 
 With the highly dynamic nature of the Amazon environment, plus the sheer
 number of operations, parameters, possible legal values and locales in the AWS
-v4 API, this strict approach must track too many combinations and permutations
-to be practical. Ruby/AWS therefore no longer tries.
+v4 API, this strict approach would be completely impractical. Ruby/AWS
+therefore doesn't even try.
 
 Instead, it's now up to you to ensure that you perform legal operations and
 pass in sensible parameters and values for the locale in which you're working.
 
-Parameter name checking, however, _is_ still performed. For example,
-performing an ItemSearch and passing in a 'Keywrds' parameter would generate
-an exception, because 'Keywrds' doesn't exist as a parameter in any context.
-Here, 'Keywords' was obviously what was intended and a simple typo was made by
-the user.
+The one exception to this rule is search index checking for ItemSearch
+operations. Code that attempts to use an invalid SearchIndex will raise an
+exception. The list of allowable search indices can be found in
+Amazon::AWS::Operation::ItemSearch::SEARCH_INDICES.
 
-Similarly, the SearchIndex must also actually exist, so 'Music' or 'Beauty'
-would be valid, but 'Furniture' or 'MobilePhones' would not, because Amazon
-does not (currently) offer such indices.
+Of course, even this check exposes the user to the risk that Amazon may later
+add new search indices, which would continue to be unrecognised and ruled
+invalid by Ruby/AWS until a future update. Whilst I have chosen to implement
+this very basic level of checking, it may be removed in the future if it
+becomes impractical to keep it current.
 
-In conclusion, we can say that broad checks are performed to determine whether
-a search _could_ conceivably be valid in any context, but it's up to you to
-determine whether the search actually _is_ valid in your particular context.
+In short, the validity of what goes into a search operation is your own
+responsibility: garbage in, garbage out.
 
 Thankfully, with the AWS Developer Guide at your side, it's largely common
 sense which parameters and values can be used with each type of search. It's
-less obvious when these differ by locale, such as 'Beauty' being a valid
-SearchIndex in the 'us' locale, bot not in the 'uk'. AWS unfortunately abounds
-with such inconsistencies.
+less obvious when these differ by locale. For example, the 'Beauty'
+SearchIndex was valid in the 'us', but not in the 'uk' until the 2009-01-06
+revision of the AWS API.
+
+Unfortunately, AWS abounds with such inconsistencies and they are prone to
+change at any time.
 
 The only way to apprise yourself of such quirks is to read Amazon's latest
 developer documentation (and closely follow the release notes of each minor
-API revision to make sure things haven't changed).
+API revision to make sure things haven't changed). If you don't want to be
+exposed to such API changes, use the 'api' parameter in the user configuration
+file to request a particular version of the API.
 
 The AWS Developer Connection pages may also be of use to you. In particular,
 the forum for discussing AWS has proved useful to me over the years:
@@ -558,8 +599,8 @@ The ./examples subdirectory contains working examples of code.
 Licence
 -------
 
-This software is copyright (C) 2008 Ian Macdonald and distributed under the
-terms of the GNU GENERAL PUBLIC LICENSE, a copy of which is included.
+This software is copyright (C) 2008-2009 Ian Macdonald and distributed under
+the terms of the GNU GENERAL PUBLIC LICENSE, a copy of which is included.
 
 -- 
 Ian Macdonald

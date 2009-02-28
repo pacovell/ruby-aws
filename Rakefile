@@ -1,4 +1,4 @@
-# $Id: Rakefile,v 1.11 2008/10/03 13:24:30 ianmacd Exp $
+# $Id: Rakefile,v 1.12 2009/02/20 00:37:15 ianmacd Exp $
 #
 
 require 'rubygems'
@@ -10,7 +10,7 @@ spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'ruby-aaws'
   s.rubyforge_project = 'Ruby/(A)AWS'
-  s.version = '0.4.4'
+  s.version = '0.5.0'
   s.author = 'Ian Macdonald'
   s.email =  'ian@caliban.org'
   s.summary = 'Ruby interface to Amazon Associates Web Services'

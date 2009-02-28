@@ -1,4 +1,4 @@
-# $Id: search.rb,v 1.26 2008/09/21 22:17:32 ianmacd Exp $
+# $Id: search.rb,v 1.30 2009/02/19 16:19:47 ianmacd Exp $
 #
 
 module Amazon
@@ -35,7 +35,7 @@ module Amazon
 	# _key_id_ is your AWS {access key
 	# ID}[https://aws-portal.amazon.com/gp/aws/developer/registration/index.html],
 	# _associate_ is your
-	# Associates[http://docs.amazonwebservices.com/AWSECommerceService/2008-04-07/GSG/BecominganAssociate.html]
+	# Associates[http://docs.amazonwebservices.com/AWSECommerceService/2009-01-06/GSG/BecominganAssociate.html]
 	# tag (if any), _locale_ is the locale in which you which to work
 	# (*us* for amazon.com[http://www.amazon.com/], *uk* for
 	# amazon.co.uk[http://www.amazon.co.uk], etc.), _cache_ is whether or
@@ -52,7 +52,7 @@ module Amazon
 	#  req = Request.new( '0Y44V8FAFNM119CX4TR2', 'calibanorg-20' )
 	#
 	def initialize(key_id=nil, associate=nil, locale=nil, cache=nil,
-		       cache_dir=nil, user_agent=USER_AGENT)
+		       user_agent=USER_AGENT)
 
 	  @config ||= Amazon::Config.new
 
@@ -62,7 +62,6 @@ module Amazon
 
 	  key_id ||= @config['key_id']
 	  cache = @config['cache'] if cache.nil?
-	  cache_dir ||= @config['cache_dir']
 
 	  # Take locale from config file if no locale was passed to method.
 	  #
@@ -79,10 +78,11 @@ module Amazon
 	  @tag	      = associate || @config['associate'] || DEF_ASSOC[locale]
 	  @user_agent = user_agent
 	  @cache      = unless cache == 'false' || cache == false
-			  Amazon::AWS::Cache.new( cache_dir )
+			  Amazon::AWS::Cache.new( @config['cache_dir'] )
 			else
 			  nil
 			end
+	  @api	      = @config['api'] || nil
 	  self.locale = locale
 	end
 
@@ -100,6 +100,10 @@ module Amazon
 	  #
 	  if @tag == Amazon::AWS::DEF_ASSOC[old_locale]
 	    @tag = Amazon::AWS::DEF_ASSOC[@locale]
+	  end
+
+	  if @config.key?( @locale ) && @config[@locale].key?( 'associate' )
+	    @tag = @config[@locale]['associate']
 	  end
 
 	  # We must now set up a new HTTP connection to the correct server for
@@ -189,7 +193,7 @@ module Amazon
 	# The maximum page number that can be returned for each type of
 	# operation is documented in the AWS Developer's Guide:
 	#
-	# http://docs.amazonwebservices.com/AWSECommerceService/2008-08-19/DG/index.html?CHAP_MakingRequestsandUnderstandingResponses.html#PagingThroughResults
+	# http://docs.amazonwebservices.com/AWSECommerceService/2009-01-06/DG/index.html?MaximumNumberofPages.html
 	#
 	# Note that _ItemLookup_ operations can use three separate pagination
 	# parameters. Ruby/AWS, however, uses _OfferPage_ for the purposes of
@@ -206,6 +210,11 @@ module Amazon
 		       merge( operation.params ).
 		       merge( response_group.params )
 
+	  # Check to see whether a particular version of the API has been
+	  # requested. If so, overwrite Version with the new value.
+	  #
+	  q_params.merge!( { 'Version' => @api } ) if @api
+
 	  query = Amazon::AWS.assemble_query( q_params )
 	  page = Amazon::AWS.get_page( self, query )
 	  doc = Document.new( page )
@@ -215,6 +224,19 @@ module Amazon
 	  # with user code, but occurred during debugging of this library.
 	  #
 	  error_check( doc )
+
+	  # Another possible error results in a document containing nothing
+	  # but <Result>Internal Error</Result>. This occurs when a specific
+	  # version of the AWS API is requested, in combination with an
+	  # operation that did not yet exist in that version of the API.
+	  #
+	  # For example:
+	  #
+	  # http://ecs.amazonaws.com/onca/xml?AWSAccessKeyId=foo&Operation=VehicleSearch&Year=2008&ResponseGroup=VehicleMakes&Service=AWSECommerceService&Version=2008-03-03
+	  #
+	  if xml = doc.elements['Result']
+	    raise Amazon::AWS::Error::AWSError, xml.text
+	  end
 
 	  # Fundamental errors happen at the OperationRequest level. For
 	  # example, if an invalid AWSAccessKeyId is used.

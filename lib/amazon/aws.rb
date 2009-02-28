@@ -1,4 +1,4 @@
-# $Id: aws.rb,v 1.72 2008/10/03 09:37:25 ianmacd Exp $
+# $Id: aws.rb,v 1.84 2009/02/19 16:01:11 ianmacd Exp $
 #
 #:include: ../../README.rdoc
 
@@ -26,10 +26,11 @@ module Amazon
       'us' => 'calibanorg-20'
     }
 
-    # Service name and version for AWS.
+    # Service name and API version for AWS. The version of the API used can be
+    # changed via the user configuration file.
     #
     SERVICE = { 'Service' => 'AWSECommerceService',
-		'Version' => '2008-08-19'
+		'Version' => '2009-01-06'
     }
 
     # Maximum number of 301 and 302 HTTP responses to follow, should Amazon
@@ -53,7 +54,9 @@ module Amazon
       'CustomerContentLookup' => { 'parameter' => 'ReviewPage',
 						  'max_page' =>  10 },
       'CustomerContentSearch' => { 'parameter' => 'CustomerPage',
-						  'max_page' =>  20 }
+						  'max_page' =>  20 },
+      'VehiclePartLookup'     => { 'parameter' => 'FitmentPage',
+						  'max_page' =>  10 }
     }
     # N.B. ItemLookup can also use the following two pagination parameters
     #
@@ -61,10 +64,17 @@ module Amazon
     #		      ---------
     # VariationPage   150
     # ReviewPage       20
-	  
+  
+
     # Exception class for HTTP errors.
     #
     class HTTPError < AmazonError; end
+
+
+    # Exception class for faulty batch operations.
+    #
+    class BatchError < AmazonError; end
+
 
     class Endpoint
 
@@ -556,29 +566,12 @@ module Amazon
 	Help		      ItemLookup	      ItemSearch
 	ListLookup	      ListSearch	      SellerListingLookup
 	SellerListingSearch   SellerLookup	      SimilarityLookup
-	TagLookup	      TransactionLookup
+	TagLookup	      TransactionLookup	      VehiclePartLookup
+	VehiclePartSearch     VehicleSearch
 
 	CartAdd		      CartClear		      CartCreate
 	CartGet		      CartModify
       ]
-
-      # These are the valid search parameters that can be used with
-      # ItemSearch.
-      #
-      PARAMETERS = %w[
-	Actor		Artist	      AudienceRating	Author
-	Brand		BrowseNode    City Composer	Conductor
-	Director	Keywords      Manufacturer	MusicLabel
-	Neighborhood	Orchestra     Power		Publisher
-	TextStream	Title
-      ]
-
-      OPT_PARAMETERS = %w[
-	Availability	Condition     MaximumPrice	MerchantId
-	MinimumPrice	OfferStatus   Sort
-      ]
-
-      ALL_PARAMETERS = PARAMETERS + OPT_PARAMETERS
 
       attr_reader :kind
       attr_accessor :params
@@ -593,6 +586,50 @@ module Amazon
 
 	@kind = op_kind
 	@params = { 'Operation' => op_kind }.merge( parameters )
+      end
+
+
+      # Group together operations of the same class in a batch request.
+      # _operations_ should be either an operation of the same class as *self*
+      # or an array of such operations.
+      #
+      # If you need to batch operations from different classes, use a
+      # MultipleOperation instead.
+      #
+      # Example:
+      #
+      #  is = ItemSearch.new( 'Books', { 'Title' => 'ruby programming' } )
+      #  is2 = ItemSearch.new( 'Music', { 'Artist' => 'stranglers' } )
+      #	 is.batch( is2 )
+      #
+      #	Please see MultipleOperation.new for details of a couple of
+      #	restrictions that also apply to batched operations.
+      #
+      def batch(*operations)
+
+	# Remove the Operation parameter to avoid batch syntax being applied.
+	# We'll readd it at the end.
+	#
+	op_type = @params.delete( 'Operation' )
+
+	operations.flatten.each do |op|
+
+	  unless self.class == op.class
+	    raise BatchError, "You can't batch different classes of operation. Use class MultipleOperation."
+	  end
+
+	  # Remove the Operation parameter.
+	  #
+	  op.params.delete( 'Operation' )
+
+	  # Apply batch syntax.
+	  #
+	  @params = batch_parameters( @params, op.params )
+	end
+
+	# Reinstate the Operation parameter.
+	#
+	@params.merge!( { 'Operation' => op_type } )
       end
 
 
@@ -634,25 +671,21 @@ module Amazon
 	params
       end
 
-
-      def parameter_check(parameters)
-	parameters.each_key do |key|
-	  raise "Bad parameter: #{key}" unless ALL_PARAMETERS.include? key.to_s
-	end
-      end
-      private :parameter_check
-
     end
 
 
-    # This class can be used to merge operations into a single operation.
-    # AWS currently supports combining two operations, 
+    # This class can be used to merge multiple operations into a single
+    # operation for greater efficiency.
     #
     class MultipleOperation < Operation
 
       # This will allow you to take two Operation objects and combine them to
-      # form a single object, which can then be used to perform searches. AWS
-      # itself imposes the maximum of two combined operations.
+      # form a single object, which can then be used to perform a single
+      # request to AWS. This allows for greater efficiency, reducing the
+      # number of requests sent to AWS.
+      #
+      # AWS currently imposes a limit of two combined operations in a multiple
+      # operation.
       #
       # <em>operation1</em> and <em>operation2</em> are both objects from a
       # subclass of Operation, such as ItemSearch, ItemLookup, etc.
@@ -661,11 +694,11 @@ module Amazon
       # of multiple operations:
       #
       # - ResponseGroup objects used when calling AWS::Search::Request#search
-      #   apply to both operations. You cannot have a separate ResponseGroup
-      #   set per operation.
+      #   apply to both operations. You cannot use a different ResponseGroup
+      #   with each operation.
       #
       # - One or both operations may have multiple results pages available,
-      #   but only the first page can be returned. If you need the other
+      #   but only the first page is returned. If you need the subsequent
       #   pages, perform the operations separately, not as part of a
       #   MultipleOperation.
       #
@@ -676,8 +709,13 @@ module Amazon
       #					'MerchantId' => 'Amazon' } )
       #	 mo = MultipleOperation.new( is, il )
       #
-      #	In the above example, we compose a multiple operation consisting of an
-      #	ItemSearch and an ItemLookup.
+      # As you can see, the operations that are combined as a
+      # MultipleOperation do not have to belong to the same class. In the
+      # above example, we compose a multiple operation consisting of an
+      # ItemSearch and an ItemLookup.
+      #
+      # If you want to batch operations belonging to the same class,
+      # Operation#batch provides an alternative.
       # 
       def initialize(operation1, operation2)
 
@@ -737,8 +775,8 @@ module Amazon
       #
       # _help_type_ is the type of object for which help is being sought, such
       # as *Operation* or *ResponseGroup*. _about_ is the name of the
-      # operation or response group you need help with, and _parameters_ is a
-      # hash of parameters that serve to further refine the request for help.
+      # operation or response group you need help with, and _parameters_ is an
+      # optional hash of parameters that further refine the request for help.
       #
       def initialize(help_type, about, parameters={})
 	super( { 'HelpType' => help_type,
@@ -764,35 +802,74 @@ module Amazon
       #
       # - *All* searches through all indices (but currently exists only in the
       #   *US* locale).
-      # - *Blended* combines DVD, Electronics, Toys, VideoGames, PCHardware,
-      #   Tools, SportingGoods, Books, Software, Music, GourmetFood, Kitchen
-      #   and Apparel.
+      # - *Blended* combines Apparel, Automotive, Books, DVD, Electronics,
+      #   GourmetFood, Kitchen, Music, PCHardware, PetSupplies, Software,
+      #   SoftwareVideoGames, SportingGoods, Tools, Toys, VHS and VideoGames.
       # - *Merchants* combines all search indices for a merchant given with
       #   MerchantId.
       # - *Music* combines the Classical, DigitalMusic, and MusicTracks
       #   indices.
       # - *Video* combines the DVD and VHS search indices.
       #
+      # Note that {page
+      # 53}[http://docs.amazonwebservices.com/AWSECommerceService/2009-01-06/DG/SearchIndices.html]
+      # of the PDF of the AWS Developer Guide (revision 2009-01-06) contains
+      # an outdated description of *Blended* with too few subindices. {Page
+      # 95}[http://docs.amazonwebservices.com/AWSECommerceService/2009-01-06/DG/CommonItemSearchParameters.html]
+      # of the PDF contains the correct list.
+      #
       SEARCH_INDICES = %w[
-	    All
-	    Apparel		Hobbies		    PetSupplies
-	    Automotive		HomeGarden	    Photo
-	    Baby		Jewelry		    Software
-	    Beauty		Kitchen		    SoftwareVideoGames
-	    Blended		Magazines	    SportingGoods
-	    Books		Merchants	    Tools
-	    Classical		Miscellaneous	    Toys
-	    DigitalMusic	Music		    VHS
-	    DVD			MusicalInstruments  Video
-	    Electronics		MusicTracks	    VideoGames
-	    ForeignBooks	OfficeProducts      Wireless
-	    GourmetFood		OutdoorLiving	    WirelessAccessories
-	    HealthPersonalCare  PCHardware
-	]
+	All
+	Apparel
+	Automotive
+	Baby
+	Beauty
+	Blended
+	Books
+	Classical
+	DigitalMusic
+	DVD
+	Electronics
+	ForeignBooks
+	GourmetFood
+	Grocery
+	HealthPersonalCare
+	Hobbies
+	HomeGarden
+	Industrial
+	Jewelry
+	KindleStore
+	Kitchen
+	Magazines
+	Merchants
+	Miscellaneous
+	MP3Downloads
+	Music
+	MusicalInstruments
+	MusicTracks
+	OfficeProducts
+	OutdoorLiving
+	PCHardware
+	PetSupplies
+	Photo
+	SilverMerchant
+	Software
+	SoftwareVideoGames
+	SportingGoods
+	Tools
+	Toys
+	VHS
+	Video
+	VideoGames
+	Watches
+	Wireless
+	WirelessAccessories
+      ]
 
 
       # Search AWS for items. _search_index_ must be one of _SEARCH_INDICES_
-      # and _parameters_ is a hash of relevant search parameters.
+      # and _parameters_ is an optional hash of parameters that further refine
+      # the scope of the search.
       #
       # Example:
       #
@@ -806,7 +883,6 @@ module Amazon
 	  raise "Invalid search index: #{search_index}"
 	end
 
-	parameter_check( parameters )
 	super( { 'SearchIndex' => search_index }.merge( parameters ) )
       end
 
@@ -820,33 +896,20 @@ module Amazon
     class ItemLookup < Operation
 
       # Look up a specific item in the AWS catalogue. _id_type_ is the type of
-      # identifier, _parameters_ is a hash that identifies the item to be
-      # located and narrows the scope of the search, and _b_parameters_ is an
-      # optional hash of further items to be located. Use of _b_parameters_
-      # effectively results in a batch operation being sent to AWS.
+      # identifier and  _parameters_ is a hash that identifies the item to be
+      # located and narrows the scope of the search.
       #
       # Example:
       #
       #  il = ItemLookup.new( 'ASIN', { 'ItemId' => 'B000AE4QEC'
-      #					'MerchantId' => 'Amazon' },
-      #				      { 'ItemId' => 'B000051WBE',
       #					'MerchantId' => 'Amazon' } )
       #
-      # In the above example, we search for two items, based on their ASIN.
-      # The use of _MerchantId_ restricts the offers returned to those for
-      # sale by Amazon (as opposed to third-party sellers).
+      # In the above example, we search for an item, based on its ASIN. The
+      # use of _MerchantId_ restricts the offers returned to those for sale
+      # by Amazon (as opposed to third-party sellers).
       #
-      def initialize(id_type, parameters, *b_parameters)
-
-	id_type_str = 'IdType'
-
-	unless b_parameters.empty?
-	  class_str = self.class.to_s.sub( /^.+::/, '' )
-	  id_type_str = '%s.Shared.IdType' % [ class_str ]
-	  parameters = batch_parameters( parameters, *b_parameters )
-	end
-
-	super( { id_type_str => id_type }.merge( parameters ) )
+      def initialize(id_type, parameters)
+	super( { 'IdType' => id_type }.merge( parameters ) )
       end
 
     end
@@ -857,8 +920,8 @@ module Amazon
     class SellerListingSearch < Operation
 
       # Search for items for sale by a particular seller. _seller_id_ is the
-      # Amazon seller ID and _parameters_ is a hash of parameters that narrows
-      # the scope of the search.
+      # Amazon seller ID and _parameters_ is an optional hash of parameters
+      # that further refine the scope of the search.
       #
       # Example:
       #
@@ -880,11 +943,8 @@ module Amazon
     class SellerListingLookup < ItemLookup
 
       # Look up a specific item for sale by a specific seller. _id_type_ is
-      # the type of identifier, _parameters_ is a hash that identifies the
-      # item to be located and narrows the scope of the search, and
-      # _b_parameters_ is an optional hash of further items to be located. Use
-      # of _b_parameters_ effectively results in a batch operation being sent
-      # to AWS.
+      # the type of identifier and _parameters_ is a hash that identifies the
+      # item to be located and narrows the scope of the search.
       #
       # Example:
       #
@@ -894,9 +954,8 @@ module Amazon
       # In the above example, we search seller <b>AP8U6Y3PYQ9VO</b>'s listings
       # to find items for sale with the ASIN <b>B0009RRRC8</b>.
       #
-      def initialize(seller_id, id_type, parameters, *b_parameters)
-	super( id_type, { 'SellerId' => seller_id }.merge( parameters ),
-	       b_parameters )
+      def initialize(seller_id, id_type, parameters)
+	super( id_type, { 'SellerId' => seller_id }.merge( parameters ) )
       end
 
     end
@@ -907,8 +966,8 @@ module Amazon
     class SellerLookup < Operation
 
       # Search for the details of a specific seller. _seller_id_ is the Amazon
-      # ID of the seller in question and _parameters_ is a hash of parameters
-      # that serve to further refine the search.
+      # ID of the seller in question and _parameters_ is an optional hash of
+      # parameters that further refine the scope of the search.
       #
       # Example:
       #
@@ -930,8 +989,8 @@ module Amazon
     class CustomerContentLookup < Operation
 
       # Search for public customer data. _customer_id_ is the unique ID
-      # identifying the customer on Amazon and _parameters_ is a hash of
-      # parameters that serve to further refine the search.
+      # identifying the customer on Amazon and _parameters_ is an optional
+      # hash of parameters that further refine the scope of the search.
       #
       # Example:
       #
@@ -981,8 +1040,8 @@ module Amazon
     class ListSearch < Operation
 
       # Search for Amazon lists. _list_type_ is the type of list to search for
-      # and _parameters_ is a hash of parameters that narrows the scope of the
-      # search.
+      # and _parameters_ is an optional hash of parameters that narrow the
+      # scope of the search.
       #
       # Example:
       #
@@ -1003,8 +1062,8 @@ module Amazon
     class ListLookup < Operation
 
       # Look up and return details about a specific list. _list_id_ is the
-      # Amazon list ID, _list_type_ is the type of list and _parameters_ is a
-      # hash of parameters that narrows the scope of the search.
+      # Amazon list ID, _list_type_ is the type of list and _parameters_ is an
+      # optional hash of parameters that narrow the scope of the search.
       #
       # Example:
       #
@@ -1030,8 +1089,9 @@ module Amazon
     class BrowseNodeLookup < Operation
 
       # Look up and return the details of an Amazon browse node. _node_ is the
-      # browse node to look up and _parameters_ is a hash of parameters that
-      # serves to further define the search. _parameters_ is currently unused.
+      # browse node to look up and _parameters_ is an optional hash of
+      # parameters that further refine the scope of the search. _parameters_
+      # is currently unused.
       #
       # Example:
       #
@@ -1052,8 +1112,8 @@ module Amazon
     class SimilarityLookup < Operation
 
       # Look up items similar to _asin_, which can be a single item or an
-      # array. _parameters_ is a hash of parameters that serve to further
-      # refine the search.
+      # array. _parameters_ is an optional hash of parameters that further
+      # refine the scope of the search.
       #
       # Example:
       #
@@ -1076,8 +1136,8 @@ module Amazon
     class TagLookup < Operation
 
       # Look up entities based on user-defined tags. _tag_name_ is the tag to
-      # search on and _parameters_ is a hash of parameters that serve to
-      # further refine the search.
+      # search on and _parameters_ is an optional hash of parameters that
+      # further refine the scope of the search.
       #
       # Example:
       #
@@ -1114,6 +1174,109 @@ module Amazon
 
     end
 
+
+    # Look up individual vehicle parts.
+    #
+    class VehiclePartLookup < Operation
+
+      # Look up a particular vehicle part. _item_id_ is the ASIN of the part
+      # in question and _parameters_ is an optional hash of parameters that
+      # further refine the scope of the search.
+      #
+      # Although the _item_id_ alone is enough to locate the part, providing
+      # _parameters_ can be useful in determining whether the part looked up
+      # is a fit for a particular vehicle type, as with the *VehiclePartFit*
+      # response group.
+      # 
+      # Example:
+      #
+      #  vpl = VehiclePartLookup.new( 'B000C1ZLI8',
+      #				      { 'Year' => 2008,
+      #				        'MakeId' => 73,
+      #				        'ModelId' => 6039,
+      #				        'TrimId' => 20 } )
+      #
+      #	Here, we search for a <b>2008</b> model *Audi* <b>R8</b> with *Base*
+      #	trim. The required Ids can be found using VehiclePartSearch.
+      #
+      def initialize(item_id, parameters={})
+	super( { 'ItemId' => item_id }.merge( parameters ) )
+      end
+
+    end
+
+
+    # Search for parts for a given vehicle.
+    #
+    class VehiclePartSearch < Operation
+
+      # Find parts for a given _year_, _make_id_ and _model_id_ of vehicle.
+      # _parameters_ is an optional hash of parameters that further refine the
+      # scope of the search.
+      #
+      # Example:
+      #
+      #  vps = VehiclePartSearch.new( 2008, 73, 6039,
+      #				      { 'TrimId' => 20,
+      #				        'EngineId' => 8914 } )
+      #
+      # In this example, we look for parts that will fit a <b>2008</b> model
+      # *Audi* <b>R8</b> with *Base* trim and a <b>4.2L V8 Gas DOHC
+      # Distributorless Naturally Aspirated Bosch Motronic Electronic FI
+      # MFI</b> engine.
+      #
+      # Note that pagination of VehiclePartSearch results is not currently
+      # supported.
+      #
+      # Use VehicleSearch to learn the MakeId and ModelId of the vehicle in
+      # which you are interested.
+      #
+      def initialize(year, make_id, model_id, parameters={})
+	super( { 'Year'	   => year,
+		 'MakeId'  => make_id,
+		 'ModelId' => model_id }.merge( parameters ) )
+      end
+
+    end
+
+
+    # Search for vehicles.
+    #
+    class VehicleSearch < Operation
+
+      # Search for vehicles, based on one or more of the following
+      # _parameters_: Year, MakeId, ModelId and TrimId.
+      #
+      # This method is best used iteratively. For example, first search on
+      # year with a response group of *VehicleMakes* to return all makes for
+      # that year.
+      #
+      # Next, search on year and make with a response group of *VehicleModels*
+      # to find all models for that year and make.
+      #
+      # Then, search on year, make and model with a response group of
+      # *VehicleTrims* to find all trim packages for that year, make and model.
+      #
+      # Finally, if required, search on year, make, model and trim package
+      # with a response group of *VehicleOptions* to find all vehicle options
+      # for that year, make, model and trim package.
+      #
+      # Example:
+      #
+      #  vs = VehicleSearch.new( { 'Year' => 2008,
+      #				   'MakeId' => 20,
+      #				   'ModelId' => 6039,
+      #				   'TrimId' => 20 } )
+      #
+      # In this example, we search for <b>2008 Audi R8</b> vehicles with a
+      # *Base* trim package. Used with the *VehicleOptions* response group,
+      # a list of vehicle options would be returned.
+      #
+      def initialize(parameters={})
+	super
+      end
+
+    end
 
     # Response groups determine which data pertaining to the item(s) being
     # sought is returned. They can strongly influence the amount of data

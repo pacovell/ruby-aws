@@ -1,11 +1,11 @@
-# $Id: ruby-aws.spec,v 1.16 2008/10/03 12:00:57 ianmacd Exp $
+# $Id: ruby-aws.spec,v 1.18 2009/02/20 00:37:15 ianmacd Exp $
 
 %{!?ruby_sitelib:	%define ruby_sitelib	%(ruby -rrbconfig -e "puts Config::CONFIG['sitelibdir']")}
 %{!?ruby_rdoc_sitepath:	%define ruby_rdoc_sitepath %(ruby -rrdoc/ri/ri_paths -e "puts RI::Paths::PATH[1]")}
 %define		rubyabi		1.8
 
 Name:		ruby-aws
-Version:	0.4.4
+Version:	0.5.0
 Release:	1%{?dist}
 Summary:	Ruby library interface to Amazon Associates Web Services
 Group:		Development/Languages
@@ -83,11 +83,37 @@ rdoc -r -o $RPM_BUILD_ROOT%{ruby_rdoc_sitepath} -x CVS lib
 %doc %{ruby_rdoc_sitepath}/
 
 %changelog
+* Fri Feb 20 2009 Ian Macdonald <ian@caliban.org> 0.5.0-1
+- 0.5.0
+- Ruby/AWS's configuration files now accept locale-specific parameters, so
+  that one can use, for example, a different associates tag in each locale.
+- Operation#batch is a new method that allows operations of any class to be
+  batched. Consequently, the interface to ItemLookup.new and
+  SellerListingLookup.new has changed: they no longer take a third parameter.
+- The VehiclePartLookup, VehiclePartSearch and VehicleSearch operations, added
+  in revision 2008-08-19 of the AWS API, are now supported.
+- The list of allowable search indices for ItemSearch operations has been
+  updated.
+- Parameter checking for ItemSearch operations no longer occurs.
+- The configuration file now supports a new global parameter, 'api', for
+  requesting a different version of the AWS API than the default.
+- AWS internal errors are now handled. They raise an
+  Amazon::AWS::Error::AWSError exception.
+
 * Fri Oct  3 2008 Ian Macdonald <ian@caliban.org> 0.4.4-1
 - 0.4.4
 - $AMAZONRCFILE may now be defined with an alternative to .amazonrc.
 - $AMAZONRCDIR and typical Windows paths were not being used as alternatives
   to $HOME.
+
+* Mon Sep 22 2008 Ian Macdonald <ian@caliban.org> 0.4.3-1
+- 0.4.3
+- $AMAZONRCDIR is now searched for .amazonrc before $HOME et al.
+- Dynamically generated perational exception classes are now subclasses of
+  Amazon::AWS::Error::AWSError (instead of StandardError), which is a subclass
+  of the new Amazon::AmazonError.
+- Some non-operational exception classes are now subclasses of the new
+  Amazon::AmazonError (instead of StandardError).
 
 * Wed Sep 11 2008 Ian Macdonald <ian@caliban.org> 0.4.2-1
 - 0.4.2
@@ -174,4 +200,3 @@ rdoc -r -o $RPM_BUILD_ROOT%{ruby_rdoc_sitepath} -x CVS lib
 
 * Sun Mar 23 2008 Ian Macdonald <ian@caliban.org> 0.0.1-1
 - Private test release only.
-

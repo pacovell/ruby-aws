@@ -1,4 +1,4 @@
-# $Id: tc_multiple_operation.rb,v 1.1 2008/05/19 10:17:26 ianmacd Exp $
+# $Id: tc_multiple_operation.rb,v 1.2 2009/02/19 16:50:00 ianmacd Exp $
 #
 
 require 'test/unit'
@@ -8,11 +8,19 @@ class TestMultipleOperation < AWSTest
 
   def test_item_search
     il = ItemLookup.new( 'ASIN', { 'ItemId' => 'B000AE4QEC',
-				   'MerchantId' => 'Amazon' },
-				 { 'ItemId' => 'B000051WBE',
 				   'MerchantId' => 'Amazon' } )
+    il2 = ItemLookup.new( 'ASIN', { 'ItemId' => 'B000051WBE',
+				   'MerchantId' => 'Amazon' } )
+
+    # Create a batch request of the two ItemLookup operations.
+    #
+    il.batch( il2 )
+
     is = ItemSearch.new( 'Books', { 'Title' => 'Ruby' } )
-    
+
+    # Create a multiple operation of the ItemSearch operation and the two
+    # batched ItemLookup operations.
+    #
     mo = MultipleOperation.new( is, il )
     
     response = @req.search( mo, @rg )
