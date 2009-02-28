@@ -5,7 +5,7 @@ require 'flexmock/test_unit'
 class TestLocalSearch < Test::Unit::TestCase
 
   def setup
-    @rg = ResponseGroup.new( :Small )
+    @rg = ResponseGroup.new( :Small, :ItemAttributes )
     @req = Request.new(@@key_id, @@associates_id)
     @req.locale = 'us'
     @req.cache = false
@@ -23,6 +23,8 @@ class TestLocalSearch < Test::Unit::TestCase
     #
     assert( results.size == 10 )
   end
+
+  protected
 
   def read_cache(file)
     data = File.open( File.dirname(__FILE__) + "/cache_files/#{file}" ).readlines.to_s

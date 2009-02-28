@@ -30,6 +30,31 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
+namespace :test do
+	desc "Local tests without the network"
+	Rake::TestTask.new(:local) do |t|
+		t.libs << 'lib' << 'test'
+		t.pattern = 'test/local/*.rb'
+		t.verbose = false
+	end
+	
+	desc "Network tests"
+	Rake::TestTask.new(:network) do |t|
+		t.libs << 'lib' << 'test'
+		t.pattern = 'test/network/*.rb'
+		t.verbose = false
+	end
+end
+
+require 'ruby-prof/task'
+
+RubyProf::ProfileTask.new do |t|
+  t.test_files = FileList['test/local/*.rb']
+  t.output_dir = "/tmp/profile"
+  t.printer = :graph_html
+  t.min_percent = 10
+end
+
 begin
   require 'rcov/rcovtask'
   Rcov::RcovTask.new do |t|
