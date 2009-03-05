@@ -7,7 +7,7 @@ module Amazon
 
     require 'amazon/aws'
     require 'net/http'
-    require 'rexml/document'
+    require 'libxml'
 
     # Load this library with:
     #
@@ -17,7 +17,7 @@ module Amazon
 
       class Request
 
-	include REXML
+	include LibXML
 
 	# Exception class for bad access key ID.
 	#
@@ -171,7 +171,8 @@ module Amazon
 	# _xml_ is the XML node below which to search.
 	#
 	def error_check(xml)
-	  if xml = xml.elements['Errors/Error']
+	  xml = xml.find('aws:Errors/aws:Error')[0]
+		if xml
 	    raise Amazon::AWS::Error.exception( xml )
 	  end
 	end
@@ -217,7 +218,10 @@ module Amazon
 
 	  query = Amazon::AWS.assemble_query( q_params )
 	  page = Amazon::AWS.get_page( self, query )
-	  doc = Document.new( page )
+
+		parser = XML::Parser.string(page)
+		doc = parser.parse
+	  doc.root.namespaces.default_prefix = 'aws'
 
 	  # Some errors occur at the very top level of the XML. For example,
 	  # when no Operation parameter is given. This should not be possible
@@ -234,14 +238,15 @@ module Amazon
 	  #
 	  # http://ecs.amazonaws.com/onca/xml?AWSAccessKeyId=foo&Operation=VehicleSearch&Year=2008&ResponseGroup=VehicleMakes&Service=AWSECommerceService&Version=2008-03-03
 	  #
-	  if xml = doc.elements['Result']
-	    raise Amazon::AWS::Error::AWSError, xml.text
+	  xml = doc.find('aws:Result')[0]
+	  if xml
+	    raise Amazon::AWS::Error::AWSError, xml.content
 	  end
 
 	  # Fundamental errors happen at the OperationRequest level. For
 	  # example, if an invalid AWSAccessKeyId is used.
 	  #
-	  error_check( doc.elements['*/OperationRequest'] )
+	  error_check( doc.find('//aws:OperationRequest')[0] )
 
 	  # Check for parameter and value errors deeper down, inside Request.
 	  #
@@ -252,25 +257,25 @@ module Amazon
 	    #
 	    # Check for errors in the first operation.
 	    #
-	    error_check( doc.elements['*/*/*/Request'] )
+	    error_check( doc.find('//*/*/aws:Request')[0] )
 
 	    # Check for errors in the second operation.
 	    #
-	    error_check( doc.elements['*/*[3]/*/Request'] )
+	    error_check( doc.find('//*[3]/*/aws:Request')[0] )
 
 	    # If second operation is batched, check for errors in its 2nd set
 	    # of results.
 	    #
-	    if batched = doc.elements['*/*[3]/*[2]/Request']
+	    if batched = doc.find('//*[3]/*[2]/aws:Request')[0]
 	      error_check( batched )
 	    end
 	  else
-	    error_check( doc.elements['*/*/Request'] )
+	    error_check( doc.find('//*/aws:Request')[0])
 
 	    # If operation is batched, check for errors in its 2nd set of
 	    # results.
 	    #
-	    if batched = doc.elements['*/*[3]/Request']
+	    if batched = doc.find('//*[3]/aws:Request')[0]
 	      error_check( batched )
 	    end
 	  end
@@ -280,8 +285,8 @@ module Amazon
 	  # currently only possible to return the first page of results
 	  # for operations combined in a MultipleOperation.
 	  #
-	  if doc.elements['*/*[2]/TotalPages']
-	    total_pages = doc.elements['*/*[2]/TotalPages'].text.to_i
+	  if doc.find('//*[2]/aws:TotalPages')[0]
+	    total_pages = doc.find('//*[2]/aws:TotalPages')[0].content.to_i
 	  else
 	    total_pages = 1
 	  end
@@ -322,8 +327,8 @@ module Amazon
 
 	    # Check for errors.
 	    #
-	    error_check( doc.elements['*/OperationRequest'] )
-	    error_check( doc.elements['*/*/Request'] )
+	    error_check( doc.find('//aws:OperationRequest')[0] )
+	    error_check( doc.find('//*/aws:Request')[0] )
 
 	    # Create a new AWS object and walk the XML response tree.
 	    #

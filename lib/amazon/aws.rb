@@ -9,7 +9,7 @@ module Amazon
     require 'uri'
     require 'amazon'
     require 'amazon/aws/cache'
-    require 'rexml/document'
+    require 'libxml'
 
     NAME = '%s/%s' % [ Amazon::NAME, 'AWS' ]
     VERSION = '0.4.4'
@@ -182,7 +182,7 @@ module Amazon
     #
     class AWSObject
 
-      include REXML
+      include LibXML
 
       # This method can be used to load AWSObject data previously serialised
       # by Marshal.dump.
@@ -199,15 +199,15 @@ module Amazon
       # dynamically defined by a separate process.
       #
       def AWSObject.load(io)
-	begin
-	  Marshal.load( io )
-	rescue ArgumentError => ex
-	  m = ex.to_s.match( /Amazon::AWS::AWSObject::([^ ]+)/ )
-	  const_set( m[1], Class.new( AWSObject ) )
+				begin
+				  Marshal.load( io )
+				rescue ArgumentError => ex
+				  m = ex.to_s.match( /Amazon::AWS::AWSObject::([^ ]+)/ )
+				  const_set( m[1], Class.new( AWSObject ) )
 
-	  io.rewind
-	  retry
-	end
+				  io.rewind
+				  retry
+				end
       end
  
 
@@ -229,67 +229,67 @@ module Amazon
       def AWSObject.yaml_load(io)
         io.each do |line|
     
-	  # File data is external, so it's deemed unsafe when $SAFE > 0, which
-	  # is the case with mod_ruby, for example, where $SAFE == 1.
-	  #
-	  # YAML data isn't eval'ed or anything dangerous like that, so we
-	  # consider it safe to untaint it. If we don't, mod_ruby will complain
-	  # when Module#const_defined? is invoked a few lines down from here.
-	  #
-	  line.untaint
-	  
-	  m = line.match( /Amazon::AWS::AWSObject::([^ ]+)/ )
-	  if m
-	    cl_name = [ m[1] ]
-	  
-	    # Module#const_defined? takes 2 parameters in Ruby 1.9.
-	    #
-	    cl_name << false if Object.method( :const_defined? ).arity == -1
-	  
-	    unless AWSObject.const_defined?( *cl_name )
-	      AWSObject.const_set( m[1], Class.new( AWSObject ) )
-	    end
-	  
-	  end
-	end
-    
-	io.rewind
-	YAML.load( io )
+				  # File data is external, so it's deemed unsafe when $SAFE > 0, which
+				  # is the case with mod_ruby, for example, where $SAFE == 1.
+				  #
+				  # YAML data isn't eval'ed or anything dangerous like that, so we
+				  # consider it safe to untaint it. If we don't, mod_ruby will complain
+				  # when Module#const_defined? is invoked a few lines down from here.
+				  #
+				  line.untaint
+  
+				  m = line.match( /Amazon::AWS::AWSObject::([^ ]+)/ )
+				  if m
+				    cl_name = [ m[1] ]
+  
+				    # Module#const_defined? takes 2 parameters in Ruby 1.9.
+				    #
+				    cl_name << false if Object.method( :const_defined? ).arity == -1
+  
+				    unless AWSObject.const_defined?( *cl_name )
+				      AWSObject.const_set( m[1], Class.new( AWSObject ) )
+				    end
+  
+				  end
+				end
+   
+				io.rewind
+				YAML.load( io )
       end
 
 
       def initialize(op=nil)
-	# The name of this instance variable must never clash with the
-	# uncamelised name of an Amazon tag.
-	#
-	# This is used to store the REXML::Text value of an element, which
-	# exists only when the element contains no children.
-	#
-	@__val__ = nil
-	@__op__ = op if op
+				# The name of this instance variable must never clash with the
+				# uncamelised name of an Amazon tag.
+				#
+				# This is used to store the REXML::Text value of an element, which
+				# exists only when the element contains no children.
+				#
+				@__val__ = nil
+				@__op__ = op if op
       end
 
 
       def method_missing(method, *params)
-	iv = '@' + method.id2name
+				iv = '@' + method.id2name
 
-	if instance_variables.include?( iv )
-	  instance_variable_get( iv )
-	elsif instance_variables.include?( iv.to_sym )
+				if instance_variables.include?( iv )
+				  instance_variable_get( iv )
+				elsif instance_variables.include?( iv.to_sym )
 
-	  # Ruby 1.9 Object#instance_variables method returns Array of Symbol,
-	  # not String.
-	  #
-	  instance_variable_get( iv.to_sym )
-	else
-	  nil
-	end
+				  # Ruby 1.9 Object#instance_variables method returns Array of Symbol,
+				  # not String.
+				  #
+				  instance_variable_get( iv.to_sym )
+				else
+				  nil
+				end
       end
       private :method_missing
  
 
       def remove_val
-	remove_instance_variable( :@__val__ )
+				remove_instance_variable( :@__val__ )
       end
       private :remove_val
 
@@ -297,41 +297,41 @@ module Amazon
       # Iterator method for cycling through an object's properties and values.
       #
       def each  # :yields: property, value
-	self.properties.each do |iv|
-	  yield iv, instance_variable_get( "@#{iv}" )
-	end
+				self.properties.each do |iv|
+				  yield iv, instance_variable_get( "@#{iv}" )
+				end
       end
 
       alias :each_property :each
 
 
       def inspect  # :nodoc:
-	remove_val if instance_variable_defined?( :@__val__ ) && @__val__.nil?
-	str = super
-	str.sub( /@__val__=/, 'value=' ) if str
+				remove_val if instance_variable_defined?( :@__val__ ) && @__val__.nil?
+				str = super
+				str.sub( /@__val__=/, 'value=' ) if str
       end
 
 
       def to_s	# :nodoc:
-	if instance_variable_defined?( :@__val__ )
-	  return @__val__ if @__val__.is_a?( String )
-	  remove_val
-	end
+				if instance_variable_defined?( :@__val__ )
+				  return @__val__ if @__val__.is_a?( String )
+				  remove_val
+				end
 
-	string = ''
+				string = ''
 
-	# Assemble the object's details.
-	#
-	each { |iv, value| string << "%s = %s\n" % [ iv, value ] }
+				# Assemble the object's details.
+				#
+				each { |iv, value| string << "%s = %s\n" % [ iv, value ] }
 
-	string
+				string
       end
 
       alias :to_str :to_s
 
 
       def to_i	# :nodoc:
-	@__val__.to_i
+				@__val__.to_i
       end
 
 
@@ -341,7 +341,7 @@ module Amazon
 
 
       def =~(other)  # :nodoc:
-	@__val__.to_s =~ other
+				@__val__.to_s =~ other
       end
 
 
@@ -351,11 +351,11 @@ module Amazon
       # tidying.
       #
       def properties
-	# Make sure we remove the leading @.
-	#
-	iv = instance_variables.collect { |v| v = v[1..-1] }
-	iv.delete( '__val__' )
-	iv
+				# Make sure we remove the leading @.
+				#
+				iv = instance_variables.collect { |v| v = v[1..-1] }
+				iv.delete( '__val__' )
+				iv
       end
 
 
@@ -363,47 +363,47 @@ module Amazon
       # This method is experimental and may be removed.
       #
       def kernel  # :nodoc: 
-	# E.g. Amazon::AWS::SellerListingLookup -> seller_listing_lookup
-	#
-	stub = Amazon.uncamelise( @__op__.class.to_s.sub( /^.+::/, '' ) )
+				# E.g. Amazon::AWS::SellerListingLookup -> seller_listing_lookup
+				#
+				stub = Amazon.uncamelise( @__op__.class.to_s.sub( /^.+::/, '' ) )
 
-	# E.g. seller_listing_response
-	#
-	level1 = stub + '_response'
+				# E.g. seller_listing_response
+				#
+				level1 = stub + '_response'
 
-	# E.g. seller_listing
-	#
-	level3 = stub.sub( /_[^_]+$/, '' )
+				# E.g. seller_listing
+				#
+				level3 = stub.sub( /_[^_]+$/, '' )
 
-	# E.g. seller_listings
-	#
-	level2 = level3 + 's'
+				# E.g. seller_listings
+				#
+				level2 = level3 + 's'
 
-	# E.g.
-	# seller_listing_search_response[0].seller_listings[0].seller_listing
-	#
-	self.instance_variable_get( "@#{level1}" )[0].
-	     instance_variable_get( "@#{level2}" )[0].
-	     instance_variable_get( "@#{level3}" )
+				# E.g.
+				# seller_listing_search_response[0].seller_listings[0].seller_listing
+				#
+				self.instance_variable_get( "@#{level1}" )[0].
+				     instance_variable_get( "@#{level2}" )[0].
+				     instance_variable_get( "@#{level3}" )
       end
 
 
       # Convert an AWSObject to a Hash.
       #
       def to_h
-	hash = {}
+				hash = {}
 
-	each do |iv, value|
-	  if value.is_a? AWSObject
-	    hash[iv] = value.to_h
-	  elsif value.is_a?( AWSArray ) && value.size == 1
-	    hash[iv] = value[0]
-	  else
-	    hash[iv] = value
-	  end
-	end
+				each do |iv, value|
+				  if value.is_a? AWSObject
+				    hash[iv] = value.to_h
+				  elsif value.is_a?( AWSArray ) && value.size == 1
+				    hash[iv] = value[0]
+				  else
+				    hash[iv] = value
+				  end
+				end
 
-	hash
+				hash
       end
 
 
@@ -412,7 +412,7 @@ module Amazon
       # that can be converted to a String with to_s.
       #
       def [](key)
-	instance_variable_get( "@#{key}" )
+				instance_variable_get( "@#{key}" )
       end
 
 
@@ -421,54 +421,54 @@ module Amazon
       #
       def walk(node)  # :nodoc:
     
-	if node.instance_of?( REXML::Document )
-	  walk( node.root )
+				if node.instance_of?( XML::Document )
+				  walk( node.root )
     
-	elsif node.instance_of?( REXML::Element )
-	  name = Amazon.uncamelise( node.name )
+				elsif node.instance_of?( XML::Node ) && !node.text?
+				  name = Amazon.uncamelise( node.name )
     
-	  cl_name = [ node.name ]
+				  cl_name = [ node.name ]
+				
+				  # Module#const_defined? takes 2 parameters in Ruby 1.9.
+				  #
+				  cl_name << false if Object.method( :const_defined? ).arity == -1
 
-	  # Module#const_defined? takes 2 parameters in Ruby 1.9.
-	  #
-	  cl_name << false if Object.method( :const_defined? ).arity == -1
+				  # Create a class for the new element type unless it already exists.
+				  #
+				  unless AWS::AWSObject.const_defined?( *cl_name )
+				    cl = AWS::AWSObject.const_set( node.name, Class.new( AWSObject ) )
 
-	  # Create a class for the new element type unless it already exists.
-	  #
-	  unless AWS::AWSObject.const_defined?( *cl_name )
-	    cl = AWS::AWSObject.const_set( node.name, Class.new( AWSObject ) )
+				    # Give it an accessor for @attrib.
+				    #
+				    cl.send( :attr_accessor, :attrib )
+				  end
+    
+				  # Instantiate an object in the newly created class.
+				  #
+				  obj = AWS::AWSObject.const_get( node.name ).new
 
-	    # Give it an accessor for @attrib.
-	    #
-	    cl.send( :attr_accessor, :attrib )
-	  end
+				  sym_name = "@#{name}".to_sym
     
-	  # Instantiate an object in the newly created class.
-	  #
-	  obj = AWS::AWSObject.const_get( node.name ).new
+				  if instance_variable_defined?( sym_name)
+			    	    instance_variable_set( sym_name,
+			    	      instance_variable_get( sym_name ) << obj )
+				  else
+				    instance_variable_set( sym_name, AWSArray.new( [ obj ] ) )
+				  end
+    
+				  if node.attributes?
+				    obj.attrib = {}
+				    node.attributes.each do |attribute|
+				      obj.attrib[attribute.name.downcase] =
+								attribute.value.to_s.sub( /^#{attribute.name}=/, '' )
+				    end
+				  end
 
-	  sym_name = "@#{name}".to_sym
+				  node.children.each { |child| obj.walk( child ) }
     
-	  if instance_variable_defined?( sym_name)
-    	    instance_variable_set( sym_name,
-    	      instance_variable_get( sym_name ) << obj )
-	  else
-	    instance_variable_set( sym_name, AWSArray.new( [ obj ] ) )
-	  end
-    
-	  if node.has_attributes?
-	    obj.attrib = {}
-	    node.attributes.each_pair do |a_name, a_value|
-	      obj.attrib[a_name.downcase] =
-		a_value.to_s.sub( /^#{a_name}=/, '' )
-	    end
-	  end
-
-	  node.children.each { |child| obj.walk( child ) }
-    
-	else # REXML::Text
-	  @__val__ = node.to_s
-	end
+				else # REXML::Text
+				  @__val__ = node.to_s
+				end
       end
 
 
